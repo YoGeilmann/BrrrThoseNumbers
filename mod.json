@@ -1,0 +1,8 @@
+{
+    "id": "BurrThoseNumbers",
+    "name": "Burr Those Numbers",
+    "author": "snipes457",
+    "version": "1.0.0",
+    "description": "can help you preventing playing last hand into economy instead of score",
+    "prefix": "BTN"
+}

@@ -1,4 +1,4 @@
-# Burr Those Numbers
+# Brr Those Numbers
 
 A mod for Balatro that helps prevent playing your last hand into economy instead of score.
 

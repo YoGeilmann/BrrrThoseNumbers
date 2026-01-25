@@ -54,8 +54,8 @@ end
 -- TEST_ID: 94821
 
 SMODS.Keybind{
-    key = 'f10',
-    func = function()
+    key_pressed = 'f10',
+    action = function()
         if G.GAME and G.GAME.current_round then
             G.GAME.current_round.hands_left = G.GAME.current_round.hands_left + 1
             G.GAME.current_round.discards_left = G.GAME.current_round.discards_left + 1

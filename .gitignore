@@ -1,4 +1,4 @@
-*.log
-*.bat
-.vscode/
-!/.docs/
+*.log 
+.vscode/ 
+!/.scripts/ 
+!/.docs/ 

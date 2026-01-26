@@ -26,7 +26,7 @@
 
 **3.3 Atomic Sync (The Heartbeat)**
 - **COMMIT:** Immediately after every validated Häppchen. Format: `type: description` (Imperative, English).
-- **SNAPSHOT:** `dir /s /b` MUST run immediately after every commit.
+- **SNAPSHOT:** `tree /f /a` MUST run immediately after every commit.
 - **PUSH:** Manual at session end or major milestone.
 - **CONSISTENCY:** Final check: Do README, smods.json, and code still align?
 

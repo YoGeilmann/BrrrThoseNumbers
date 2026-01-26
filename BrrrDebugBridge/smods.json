@@ -1,0 +1,10 @@
+{
+    "id": "BrrrDebugBridge",
+    "name": "Brrr Debug Bridge",
+    "author": ["YoGeilmann"],
+    "version": "1.0.0",
+    "description": "Dev tool for scenario testing.",
+    "prefix": "brrr_dbg",
+    "main_file": "bridge_logic.lua",
+    "dependencies": ["BrrrThoseNumbers"]
+}

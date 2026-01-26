@@ -1,3 +1,4 @@
+-- Author: YoGeilmann
 -- FIA: Load UI configuration from separate file
 assert(SMODS.load_file("config_ui.lua"))()
 
@@ -35,3 +36,17 @@ function UIBox:draw()
     end
 end
 
+-- BRRR Feature: Audio feedback based on score magnitude
+local function calculate_brrr_pitch(value)
+    if not value or value <= 0 then return 1.0 end
+    -- Stress Test: Ensure math.log is used with explicit base 10 for Lua 5.4 compatibility
+    return math.min(0.8 + (math.log(value, 10) * 0.02), 5.0)
+end
+
+local old_confirm_ea = G.FUNCS.confirm_ea
+function G.FUNCS.confirm_ea(e)
+    if mod.config.enable_sound then
+        play_sound('tarot1', calculate_brrr_pitch(G.GAME.chips), 0.6)
+    end
+    old_confirm_ea(e)
+end

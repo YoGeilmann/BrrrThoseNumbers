@@ -1,4 +1,11 @@
-*.log 
-.vscode/ 
-!/.scripts/ 
-!/.docs/ 
+# System / OS
+.DS_Store
+
+# Logs
+*.log
+
+# IDE
+.vscode/
+
+# Local Tools (not part of the repo source)
+.tools/

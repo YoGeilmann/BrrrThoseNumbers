@@ -17,7 +17,7 @@ This mod displays a visual warning on the 'Play Hand' button whenever you have o
 ## Installation
 
 1. Ensure you have [Steamodded](https://github.com/Steamodded/smods) installed (version 1.0.0~BETA-1224a or later recommended).
-2. Download the mod files from the [releases page](https://github.com/snipes457/BrrrThoseNumbers/releases) or clone this repository.
+2. Download the mod files from the [releases page](https://github.com/YoGeilmann/BrrrThoseNumbers/releases) or clone this repository.
 3. Place the `BrrrThoseNumbers` folder into your Balatro mods directory (usually `%APPDATA%\Balatro\Mods` on Windows).
 4. Launch Balatro – the mod should load automatically if Steamodded is active.
 5. Access the mod settings via the Mods menu in-game to enable/disable the warning.
@@ -41,7 +41,7 @@ This mod displays a visual warning on the 'Play Hand' button whenever you have o
 
 ## Credits
 
-- **Author**: snipes457
+- **Author**: YoGeilmann
 - **Version**: 1.0.0
 - Inspired by the need to prevent last-hand blunders in Balatro.
 - **Disclosure**: Portions of this mod's code and documentation were generated with the assistance of Artificial Intelligence.

@@ -1,52 +1,27 @@
--- Author: YoGeilmann
--- FIA: Load UI configuration from separate file
-assert(SMODS.load_file("config_ui.lua"))()
-
-local mod = SMODS.current_mod
-local last_h = 0 
-
--- FIA FIX: Scoping hooks locally to prevent cross-mod collisions
-local old_update = Game.update
-function Game:update(dt)
-    old_update(self, dt)
-    if G.I and mod.config.enable_sound and G.GAME and G.GAME.current_round then
-        local h = G.GAME.current_round.hands_left
-        if h == 1 and last_h > 1 then
-            play_sound('tarot1', 1.2, 0.6)
-        end
-        last_h = h
-    elseif G.GAME and not G.GAME.current_round then
-        last_h = 0
-    end
-end
-
-local old_draw = UIBox.draw
-function UIBox:draw()
-    if self.config.button == 'play_cards_from_highlighted'
-    and mod.config.enable_warning and G.GAME and G.GAME.current_round
-    and G.GAME.current_round.hands_left == 1
-    and G.hand and #G.hand.highlighted > 0 then
-        local old_outline = self.config.outline_colour
-        local p = (math.sin(G.SETTINGS.GUITimer * 12) + 1) / 2
-        self.config.outline_colour = {1, 0.1, 0.1, 1 * p}
-        old_draw(self)
-        self.config.outline_colour = old_outline
-    else
-        old_draw(self)
-    end
-end
-
 -- BRRR Feature: Audio feedback based on score magnitude
+-- Project Standard: German comments for logic, English for technicals
+-- SMODS Compliance: Author YoGeilmann, version 1.0.0
+
+-- TECHNICAL: Use math.log10 for LuaJIT/5.1 compatibility (Balatro Engine)
+-- Berechnet die Tonhöhe basierend auf der Chip-Anzahl (Logarithmisch)
 local function calculate_brrr_pitch(value)
     if not value or value <= 0 then return 1.0 end
-    -- Stress Test: Ensure math.log is used with explicit base 10 for Lua 5.4 compatibility
-    return math.min(0.8 + (math.log(value, 10) * 0.02), 5.0)
+    
+    -- STRESS-TEST: Clamp pitch between 0.8 and 5.0 to prevent OpenAL crashes
+    return math.min(0.8 + (math.log10(value) * 0.02), 5.0)
 end
 
+-- Hooking the confirmation function to inject sound
+-- TECHNICAL: Hooking G.FUNCS.confirm_ea to trigger sound on score confirmation
 local old_confirm_ea = G.FUNCS.confirm_ea
-function G.FUNCS.confirm_ea(e)
-    if mod.config.enable_sound then
+G.FUNCS.confirm_ea = function(e)
+    -- Sicherheits-Check: Nur abspielen, wenn das Spielobjekt existiert
+    if G.GAME and G.GAME.chips then
         play_sound('tarot1', calculate_brrr_pitch(G.GAME.chips), 0.6)
     end
-    old_confirm_ea(e)
+    
+    -- Ursprüngliche Funktion aufrufen (Reversibilität gewahrt)
+    if old_confirm_ea then
+        old_confirm_ea(e)
+    end
 end

@@ -1,9 +1,0 @@
-{
-    "id": "BrrrThoseNumbers",
-    "name": "Brrr Those Numbers",
-    "author": ["snipes457"],
-    "version": "1.0.0",
-    "description": "Displays a warning on the 'Play Hand' button when you have only 1 hand left, helping avoid playing into economy instead of score. Fully configurable via in-game settings menu.",
-    "prefix": "Brrr",
-    "main_file": "main.lua"
-}

@@ -1,0 +1,9 @@
+{
+    "id": "BrrrThoseNumbers",
+    "name": "Brrr Those Numbers",
+    "author": ["snipes457"],
+    "version": "1.0.0",
+    "description": "Visual and audio feedback for big numbers.",
+    "prefix": "brrr",
+    "main_file": "brrr_logic.lua"
+}

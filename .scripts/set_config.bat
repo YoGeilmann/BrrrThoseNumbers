@@ -1,45 +1,40 @@
 @echo off
 setlocal enabledelayedexpansion
 
-:: GP-2026-STRICT: Atomic Config Generator
-:: Purpose: Prepare the config.lua in the source directory.
+:: GP-2026-STRICT: Bridge Configuration Generator
+:: [FIX] Removed pipe character to prevent CMD execution errors
 
-:: --- 1. PATH RESOLUTION ---
 set "SCRIPT_DIR=%~dp0"
-:: Resolve REPO_ROOT safely
 for %%i in ("%SCRIPT_DIR%..") do set "REPO_ROOT=%%~fi"
-set "TARGET_DIR=%REPO_ROOT%\BrrrDebugBridge"
-set "CONFIG_FILE=%TARGET_DIR%\config.lua"
+set "CONFIG_FILE=%REPO_ROOT%\BrrrDebugBridge\config.lua"
 
-:: --- 2. SAFETY CHECK ---
-if not exist "%TARGET_DIR%" (
-    echo [CRITICAL] Target directory missing: "%TARGET_DIR%"
-    exit /b 1
-)
-
-:: --- 3. FLAG PROCESSING ---
-:: Standard: Intro is skipped (show_intro = false)
+set "MODE=auto"
 set "SHOW_INTRO=false"
 
-:: If argument 1 is "intro", we show the intro (show_intro = true)
+:args_loop
+if "%~1"=="" goto write_config
 if /i "%~1"=="intro" (
     set "SHOW_INTRO=true"
+    echo [CONFIG] Status: Intro enabled
 )
+if /i "%~1"=="manual" (
+    set "MODE=manual"
+    echo [CONFIG] Status: Manual mode activated
+)
+shift
+goto args_loop
 
-:: --- 4. ATOMIC WRITE ---
-:: We write to a temp file first and then move to avoid partial writes
-set "TEMP_CONFIG=%CONFIG_FILE%.tmp"
-
+:write_config
 (
-echo -- GP-2026-STRICT: Automated Bridge Config
-echo -- Generated: %date% %time%
 echo return {
 echo     show_intro = %SHOW_INTRO%,
-echo     test_scenario = "default"
+echo     mode = "%MODE%",
+echo     deck = "b_red"
 echo }
-) > "%TEMP_CONFIG%"
+) > "%CONFIG_FILE%.tmp"
 
-move /y "%TEMP_CONFIG%" "%CONFIG_FILE%" >nul
+move /y "%CONFIG_FILE%.tmp" "%CONFIG_FILE%" >nul
 
-echo [CONFIG] Bridge source updated: show_intro=%SHOW_INTRO%
+:: GP-2026-STRICT: Use safe delimiters only
+echo [CONFIG] Sync complete - Mode: %MODE% - Intro: %SHOW_INTRO%
 exit /b 0

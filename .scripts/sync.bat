@@ -30,9 +30,15 @@ if %VALIDATION_FAILED% equ 1 (
     pause & exit /b
 )
 
-:: --- 3.5 CONFIGURATION (NEW) ---
+:: --- 3.5 CONFIGURATION (REPAIRED) ---
 echo [SYNC] Preparing bridge configuration...
-call "%SCRIPT_DIR%set_config.bat" %2
+:: GP-2026-STRICT: Safer argument extraction using shift logic
+set "MSG_ARG=%~1"
+shift
+set "BRIDGE_FLAGS=%*"
+
+:: Execute config generator with remaining arguments
+call "%SCRIPT_DIR%set_config.bat" %BRIDGE_FLAGS%
 if !errorlevel! neq 0 (
     echo [CRITICAL] Config generation failed.
     pause & exit /b

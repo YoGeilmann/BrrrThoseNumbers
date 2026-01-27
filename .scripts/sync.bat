@@ -30,6 +30,14 @@ if %VALIDATION_FAILED% equ 1 (
     pause & exit /b
 )
 
+:: --- 3.5 CONFIGURATION (NEW) ---
+echo [SYNC] Preparing bridge configuration...
+call "%SCRIPT_DIR%set_config.bat" %2
+if !errorlevel! neq 0 (
+    echo [CRITICAL] Config generation failed.
+    pause & exit /b
+)
+
 :: --- 4. DEPLOYMENT ---
 echo [SYNC] Mirroring to AppData...
 robocopy "%REPO_ROOT%\BrrrThoseNumbers" "%MOD_DIR%\BrrrThoseNumbers" /MIR /NFL /NDL /NJH /NJS /nc /ns /np

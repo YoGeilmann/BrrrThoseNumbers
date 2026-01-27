@@ -1,4 +1,4 @@
-# BOOT RULES & PROTOCOLS (v2.1-STRICT)
+# BOOT RULES & PROTOCOLS (v2.2-STRICT)
 
 1. STARTUP:
    - Read `.docs/PROTOCOL.md` and `BOOT_RULES.md`.
@@ -6,8 +6,8 @@
 2. STYLE: COLD. Minimalist. Technical. No filler.
 3. PRIORITY: User concerns or identified risks override ALL tasks immediately (Problem-First).
 4. SYNC (ATOMIC):
-   - Commit after every validated "Haeppchen".
-   - Followed by immediate `tree /f /a` to update `.docs\structure_snapshot.md`.
+   - Every Chunk must be validated before commit.
+   - The `.scripts/sync.bat` automates `tree /f /a` into `structure_snapshot.md` before every commit to ensure consistency.
 5. HANDSHAKE:
    - Re-read all relevant files after ANY manual intervention or Git-Merge.
    - Use VS Code Code Assist for complex file writes (Special Characters/Escaping).
@@ -16,5 +16,4 @@
 8. RECOVERY: If Git diverges, resolve conflicts before proceeding with logic.
 9. DEBUG STACK: Automated stress tests require both DebugPlus and DebugPlusPlus to be active.
 10. LAUNCH: Intro bypass is permitted via Global Lua Override (bridge_logic.lua). 
-    To prevent audio buffer issues, the override must ensure G.SETTINGS.skip_splash is set 
-    at the earliest possible execution point.
+    The override must ensure G.SETTINGS.skip_splash is set at the earliest possible execution point.

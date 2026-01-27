@@ -1,9 +1,16 @@
--- BrrrDebugBridge Heartbeat
--- Logic: Check if the Core Mod is loaded and report status.
-function SMODS.current_mod.process_config(config)
-    if SMODS.Mods["BrrrThoseNumbers"] then
-        sendDebugMessage("BrrrDebugBridge: [OK] Core Mod detected and linked.")
-    else
-        sendDebugMessage("BrrrDebugBridge: [WARN] Core Mod 'BrrrThoseNumbers' not found!")
-    end
+---
+--- BrrrDebugBridge - Main Entry Point
+---
+
+-- [BOOT CONTROL]
+-- Force skip the intro by overriding the splash_screen function.
+-- This bypasses the video/animation stage immediately.
+G.SETTINGS.skip_splash = 'Yes'
+
+local original_splash = Game.splash_screen
+function Game:splash_screen()
+    self:main_menu()
 end
+
+-- Success Indicator
+sendDebugMessage("!!! BRRR BRIDGE: Intro Bypass Active !!!")

@@ -163,6 +163,9 @@ C:\DEV\BALATRO-WORKSPACE
 |   |   |       340f5f876017d3ea6a6380fae0adce72a51255
 |   |   |       bb751b0f8ea52f0ab535e1d64bc065d8699a69
 |   |   |       
+|   |   +---2a
+|   |   |       2086f7a6238f940856ada630b69bad891cfbce
+|   |   |       
 |   |   +---2b
 |   |   |       893e2fd874db11242f6ba8acf8b0d87919de34
 |   |   |       a191f7fdd011b4df185bb1ac1ce4068e31bd6b
@@ -188,6 +191,7 @@ C:\DEV\BALATRO-WORKSPACE
 |   |   |       
 |   |   +---38
 |   |   |       578ef2cce7cd91c5b4c9ecf15840a10d543634
+|   |   |       eb72eb15f4e8e2f52821f2b0c9f997e6eeaeed
 |   |   |       
 |   |   +---39
 |   |   |       06fed39bbba0bc2b5b7db61e14affb40a78765
@@ -221,6 +225,7 @@ C:\DEV\BALATRO-WORKSPACE
 |   |   |       
 |   |   +---42
 |   |   |       05b299690a0a464100d25b943cd56a1dadd6d5
+|   |   |       9131213ad7f49abac201f0178eb4222c35f70d
 |   |   |       ba917689740e9b4e66ead36453b2eae1dc3b4a
 |   |   |       
 |   |   +---43
@@ -236,6 +241,9 @@ C:\DEV\BALATRO-WORKSPACE
 |   |   |       
 |   |   +---49
 |   |   |       b2698aa17b53c8b00c40fb21243614e0ed20c1
+|   |   |       
+|   |   +---4a
+|   |   |       8e755f6e777c31faa70f4f60a98f9507290b1c
 |   |   |       
 |   |   +---4b
 |   |   |       657a911bfafd47b0a42bca38d8e370ebd11335
@@ -266,6 +274,7 @@ C:\DEV\BALATRO-WORKSPACE
 |   |   |       
 |   |   +---54
 |   |   |       262aa73a0f2e5a321458471ef6da2cc1c55522
+|   |   |       90307c6cee49b50c8e964a7bfa266b3bd99ead
 |   |   |       
 |   |   +---55
 |   |   |       b49e083f0b6e700d83ace14083efbbc95885c0
@@ -295,6 +304,8 @@ C:\DEV\BALATRO-WORKSPACE
 |   |   |       
 |   |   +---62
 |   |   |       544eb8fb314f31a972351610663086ccb9eb7a
+|   |   |       c5a83a3e91d593a7315e422780af679efe12d4
+|   |   |       fb1e9e6bbd78091352dec6ee97d5936b3e1e39
 |   |   |       
 |   |   +---63
 |   |   |       36a7d70555693c40e09de94568a7610a6a0b56
@@ -312,6 +323,7 @@ C:\DEV\BALATRO-WORKSPACE
 |   |   +---69
 |   |   |       1b3eb6c5fc75af88eceece64aaed2c7b921ba3
 |   |   |       20a85551f1272b5e037accdda229fe6a4035ee
+|   |   |       2b9edcdce3262c5d8c6b0735834496f552d133
 |   |   |       
 |   |   +---6a
 |   |   |       702336f3a2a75b01607c98fe91a1242cc0bd33
@@ -363,12 +375,14 @@ C:\DEV\BALATRO-WORKSPACE
 |   |   |       
 |   |   +---84
 |   |   |       4ba531f0d14b8d076fa9d7edbad3cb7d506fec
+|   |   |       771ebff69f9dee1e875b6de394f8f305866340
 |   |   |       ba90898d826a630cb064967a117c11ab3e01b3
 |   |   |       
 |   |   +---87
 |   |   |       5f09230d75c51f7814861978aaba0887522335
 |   |   |       
 |   |   +---88
+|   |   |       690d55537d1e9b9b62800f0a63324d019b7b98
 |   |   |       b41a439448327e6631ee54da2f2ffd6774bcb2
 |   |   |       
 |   |   +---89
@@ -396,6 +410,7 @@ C:\DEV\BALATRO-WORKSPACE
 |   |   |       efd242e9cf84f3c29c145cc477eb874da08fd9
 |   |   |       
 |   |   +---93
+|   |   |       070c372c24eb7ec92ad1eca18e426654e1dde3
 |   |   |       75c90fdaa099a35d5daa9e731570116e154e11
 |   |   |       7820a3d038a14a1c2171f753617a16596f3dfd
 |   |   |       
@@ -455,6 +470,7 @@ C:\DEV\BALATRO-WORKSPACE
 |   |   |       
 |   |   +---aa
 |   |   |       2ab13a64e49d82a125c729306526d826f3be2f
+|   |   |       d59eca334214eaee3135f4a416255c8fb9a7bf
 |   |   |       e5d6008e10c6e1e47844d173022650a76e50cd
 |   |   |       f77026151b6fb3bcf355b41154f5bacf5fbac8
 |   |   |       
@@ -505,6 +521,7 @@ C:\DEV\BALATRO-WORKSPACE
 |   |   |       
 |   |   +---c1
 |   |   |       68ff5e08431a8b08e17b3cef6e253e25b948f6
+|   |   |       99d2eea1db522f1b8c474081f2a0ec5f7b2651
 |   |   |       e587c3e2ba4cadbaf74d96aeb2f1aaee83e1b1
 |   |   |       
 |   |   +---c2
@@ -535,6 +552,7 @@ C:\DEV\BALATRO-WORKSPACE
 |   |   |       4359b704011d1f4ee0a255a80d90f6581032c3
 |   |   |       
 |   |   +---cb
+|   |   |       02410740e54ca18ac42ba57d9d9211f01e8e8e
 |   |   |       3e951452298d63d66459a3b0f5f5cd4fedc1f3
 |   |   |       8ed9e94f49aaa3755006bdb84b3e8d257a0fa6
 |   |   |       
@@ -599,6 +617,7 @@ C:\DEV\BALATRO-WORKSPACE
 |   |   |       
 |   |   +---e3
 |   |   |       76eb762b707abe30e8abe717d8a18b99851330
+|   |   |       839e3647195397f903526b882573c683ccc39e
 |   |   |       e436985736c5701c75fe6ae6115a3abf9b4cd5
 |   |   |       
 |   |   +---e4
@@ -662,6 +681,7 @@ C:\DEV\BALATRO-WORKSPACE
 |   |   |       
 |   |   +---fc
 |   |   |       676c0cb5c7f4adea05aae99f17a6bc4589d679
+|   |   |       706813877553ea291fb32bee547abb04f3bb03
 |   |   |       b06f260ab007efd11b0faae6a13fd417664ccd
 |   |   |       
 |   |   +---fd
@@ -687,6 +707,7 @@ C:\DEV\BALATRO-WORKSPACE
 |       \---tags
 +---.scripts
 |       exclude_list.txt
+|       set_config.bat
 |       sync.bat
 |       
 +---.tools
@@ -697,6 +718,7 @@ C:\DEV\BALATRO-WORKSPACE
 |       
 +---BrrrDebugBridge
 |       bridge_logic.lua
+|       config.lua
 |       smods.json
 |       
 \---BrrrThoseNumbers

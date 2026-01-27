@@ -6,5 +6,6 @@
     "description": "Dev tool for scenario testing.",
     "prefix": "brrr_dbg",
     "main_file": "bridge_logic.lua",
-    "dependencies": ["BrrrThoseNumbers"]
+    "priority": 100,
+    "dependencies": ["BrrrThoseNumbers", "DebugPlus", "dpp"]
 }

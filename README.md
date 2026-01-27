@@ -10,13 +10,13 @@ Dual-mod environment separating production code from development tools.
 - **Independence:** Standalone mod, no debug dependencies.
 
 ### 2. BrrrDebugBridge (Dev Tool)
-- **Framework:** SMODS + lovely-injector + DebugPlus.
+- **Framework:** SMODS + lovely-injector + DebugPlus + DebugPlusPlus (ID: dpp).
 - **Role:** Technical bridge to expose core internal states via global hooks or lovely-patches without polluting production logic.
 
 ## 🛠 Prerequisites & Dependencies
 - **Steamodded (SMODS):** Mandatory base.
 - **lovely-injector:** Required for patching/DebugPlus.
-- **DebugPlus:** Required for real-time console debugging (Bridge users only).
+- **DebugPlus + DebugPlusPlus (ID: dpp):** Required for real-time console debugging (Bridge users only).
 - **luac54.exe:** Internal tool in `.tools/` for syntax validation.
 
 ## 🚦 Automation & ATOMIC SYNC Workflow

@@ -61,6 +61,9 @@ C:\DEV\BALATRO-WORKSPACE
 |   |   |       72570dda63906ac1b0384ab6c329df4bd57213
 |   |   |       e5ec0ef95d0977e3768637778c6a401c1c5a7c
 |   |   |       
+|   |   +---01
+|   |   |       fe174ffd5be8652b524f7beabe3f7cff1faffc
+|   |   |       
 |   |   +---04
 |   |   |       6d7ef07fdab72dbb74033fea47aae0f5ee1b40
 |   |   |       
@@ -87,6 +90,7 @@ C:\DEV\BALATRO-WORKSPACE
 |   |   |       
 |   |   +---0c
 |   |   |       171f26537642d829105e16f8c7fb361134f0c9
+|   |   |       b0eed2c303153acce18a208dbf4168c84ef039
 |   |   |       f3d49d62eb75483520ba177f09ff05322bd3f9
 |   |   |       
 |   |   +---0e
@@ -208,6 +212,7 @@ C:\DEV\BALATRO-WORKSPACE
 |   |   |       ce024cb677da57814992d34435b2ddff52e081
 |   |   |       
 |   |   +---40
+|   |   |       662578b401c233dd157882597bb811e8edbf92
 |   |   |       f66541240114fdc558e7c5d6bf5e5f04df4649
 |   |   |       
 |   |   +---41
@@ -317,6 +322,7 @@ C:\DEV\BALATRO-WORKSPACE
 |   |   |       
 |   |   +---70
 |   |   |       4b197769bec78d11555aa611133779aeaf642a
+|   |   |       b58af255778b61ba7adf6785e53acb98f296b4
 |   |   |       e9cff907128c783128d904717bc91a6cddc885
 |   |   |       
 |   |   +---71
@@ -534,6 +540,7 @@ C:\DEV\BALATRO-WORKSPACE
 |   |   |       
 |   |   +---cc
 |   |   |       1d06030512af36abc4bafabb81c9d8e11acfdf
+|   |   |       6494e58bd71231c537f7df225ebe697f1ec19c
 |   |   |       
 |   |   +---cd
 |   |   |       e8af16ba5cc0c8ed54d806b0589227d7d1d145
@@ -643,6 +650,9 @@ C:\DEV\BALATRO-WORKSPACE
 |   |   |       1ce86c50091ed90678c57750be95c8d522b13b
 |   |   |       55c8fdd77622b72957b313ed5b9a87bf58c333
 |   |   |       
+|   |   +---f7
+|   |   |       a7d639d29637cbb49931c42afc057243bace92
+|   |   |       
 |   |   +---f9
 |   |   |       30cb61d60860b7de34fd144b3a56a4f2e59cc7
 |   |   |       753e21d2aa6cfc5c1d3df9621d6fd922514807
@@ -676,7 +686,6 @@ C:\DEV\BALATRO-WORKSPACE
 |       |           
 |       \---tags
 +---.scripts
-|       checkpoint.bat
 |       exclude_list.txt
 |       sync.bat
 |       

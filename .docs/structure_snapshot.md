@@ -11,9 +11,11 @@ C:\DEV\BALATRO-WORKSPACE
 |       structure_snapshot.md
 |       
 +---.dump
-|       game.lua
-|       main.lua
-|       
+|   |   game.lua
+|   |   main.lua
+|   |   
+|   +---balatro_source
+|   \---mods
 +---.git
 |   |   .lovelyignore
 |   |   COMMIT_EDITMSG
@@ -54,6 +56,7 @@ C:\DEV\BALATRO-WORKSPACE
 |   |       |       
 |   |       \---remotes
 |   |           \---origin
+|   |                   HEAD
 |   |                   main
 |   |                   
 |   +---objects
@@ -127,6 +130,7 @@ C:\DEV\BALATRO-WORKSPACE
 |   |   |       2c4af1e34707f58fe1e9fca502632520c3f22a
 |   |   |       
 |   |   +---1b
+|   |   |       92cdacd088fa837e57bda21c833dc149054c9c
 |   |   |       9cfe01defd7d31940384949d9de0c715f54133
 |   |   |       
 |   |   +---1d
@@ -187,6 +191,7 @@ C:\DEV\BALATRO-WORKSPACE
 |   |   |       
 |   |   +---33
 |   |   |       24d660c47d2c1232be3425a586671e18433c39
+|   |   |       94fbca12e5beda1e188583fc31c224bc4e3150
 |   |   |       
 |   |   +---36
 |   |   |       4ff72f054622d15d0daec846ed5a8ba41303cd
@@ -263,6 +268,9 @@ C:\DEV\BALATRO-WORKSPACE
 |   |   |       
 |   |   +---4e
 |   |   |       5e00d0904c73dac909ffe707bd6a2324befc47
+|   |   |       
+|   |   +---4f
+|   |   |       87575f7c51a4e974095fd279d95cb8bdf739b6
 |   |   |       
 |   |   +---50
 |   |   |       a03f9ef72a59ac58e6805466626202cb620d6d
@@ -432,6 +440,7 @@ C:\DEV\BALATRO-WORKSPACE
 |   |   |       b4024836036e053ef54753ee2d3ea846fb28a1
 |   |   |       b84d64c26ef9f2b84ea7a0012b02e30776635c
 |   |   |       efd242e9cf84f3c29c145cc477eb874da08fd9
+|   |   |       fd6c2804ed9b08d7f20c2da0a673be59c7f3c3
 |   |   |       
 |   |   +---93
 |   |   |       070c372c24eb7ec92ad1eca18e426654e1dde3
@@ -649,6 +658,7 @@ C:\DEV\BALATRO-WORKSPACE
 |   |   |       ffdc6581097a1ec432347166a8b06a609c8a62
 |   |   |       
 |   |   +---e0
+|   |   |       5d4e1ec9c29f18dba558271f7958c4946dd362
 |   |   |       a206ce809b5b16595040ee34c1871af51f1bb9
 |   |   |       
 |   |   +---e2
@@ -735,6 +745,9 @@ C:\DEV\BALATRO-WORKSPACE
 |   |   +---fd
 |   |   |       a1f43fdae677ea2ae12cc3345b289640d65c4d
 |   |   |       
+|   |   +---ff
+|   |   |       8f408a34ebf6b4ff85c22ab06e81c1cf4f7998
+|   |   |       
 |   |   +---info
 |   |   |       commit-graph
 |   |   |       packs
@@ -750,6 +763,7 @@ C:\DEV\BALATRO-WORKSPACE
 |       |       
 |       +---remotes
 |       |   \---origin
+|       |           HEAD
 |       |           main
 |       |           
 |       \---tags

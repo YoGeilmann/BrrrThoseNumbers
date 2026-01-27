@@ -1,0 +1,66 @@
+[manifest]
+version = "1.0.0"
+dump_lua = true
+priority = 0
+
+[[patches]]
+[patches.pattern]
+target = "functions/button_callbacks.lua"
+pattern = '''
+  if args.key == '[' or args.key == ']' then return end
+  if args.key == '0' then args.key = 'o' end
+'''
+position = "at"
+payload = '''
+'''
+match_indent = true
+
+[[patches]]
+[patches.pattern]
+target = "engine/controller.lua"
+pattern = '''
+        if key == 'tab' and not G.debug_tools then
+'''
+position = "at"
+payload = '''
+        if key == 'tab' and not G.debug_tools and DPP.config.open_og_debug then
+'''
+match_indent = true
+
+[[patches]]
+[patches.pattern]
+target = "functions/button_callbacks.lua"
+pattern = '''
+        text.current_position = math.min(position_child-1, string.len(text.ref_table[text.ref_value]))
+'''
+position = "at"
+payload = '''
+        text.current_position = math.min(position_child-1, string.len(to_number(text.ref_table[text.ref_value]) ))
+'''
+match_indent = true
+
+[[patches]]
+[patches.pattern]
+target = "engine/ui.lua"
+pattern = '''
+        if not self.config.no_recalc and self.config.prev_value and string.len(self.config.prev_value) ~= string.len(self.config.text) then self.UIBox:recalculate() end
+'''
+position = "at"
+payload = '''
+        if not self.config.no_recalc and self.config.prev_value and string.len(tostring(to_number(self.config.prev_value)) ) ~= string.len(tostring(to_number(self.config.text)) ) then self.UIBox:recalculate() end
+'''
+match_indent = true
+
+[[patches]]
+[patches.pattern]
+target = "functions/common_events.lua"
+pattern = '''
+        local col = G.C.MONEY
+        if mod < 0 then
+'''
+position = "at"
+payload = '''
+        local col = G.C.MONEY
+        if to_big(mod) < to_big(0) then
+'''
+match_indent = true

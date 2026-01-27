@@ -11,11 +11,90 @@ C:\DEV\BALATRO-WORKSPACE
 |       structure_snapshot.md
 |       
 +---.dump
-|   |   game.lua
-|   |   main.lua
-|   |   
 |   +---balatro_source
+|   |       Balatro.exe
+|   |       https.dll
+|   |       license.txt
+|   |       love.dll
+|   |       lua51.dll
+|   |       luasteam.dll
+|   |       mpg123.dll
+|   |       msvcp120.dll
+|   |       msvcr120.dll
+|   |       OpenAL32.dll
+|   |       readme.txt
+|   |       SDL2.dll
+|   |       steam_api64.dll
+|   |       steam_appid.txt
+|   |       version.dll
+|   |       
 |   \---mods
+|       +---DebugPlus
+|       |   |   keys.txt
+|       |   |   README.MD
+|       |   |   smods.json
+|       |   |   
+|       |   +---assets
+|       |   |   +---1x
+|       |   |   |       modicon.png
+|       |   |   |       
+|       |   |   \---2x
+|       |   |           modicon.png
+|       |   |           
+|       |   +---debugplus
+|       |   |       api.lua
+|       |   |       config.lua
+|       |   |       console.lua
+|       |   |       core.lua
+|       |   |       logger.lua
+|       |   |       prof.lua
+|       |   |       smods.lua
+|       |   |       ui.lua
+|       |   |       unicode.lua
+|       |   |       util.lua
+|       |   |       watcher.lua
+|       |   |       
+|       |   +---docs
+|       |   |       changelog.md
+|       |   |       dev.md
+|       |   |       
+|       |   \---lovely
+|       |           console.toml
+|       |           debug-enhancements.toml
+|       |           misc.toml
+|       |           modules.toml
+|       |           
+|       \---DebugPlusPlus
+|           |   aux_functions.lua
+|           |   callback_functions.lua
+|           |   config.lua
+|           |   main.lua
+|           |   main_UI.lua
+|           |   overrides.lua
+|           |   README.md
+|           |   smods.json
+|           |   
+|           +---assets
+|           |   +---1x
+|           |   |       modicon.png
+|           |   |       
+|           |   +---2x
+|           |   |       modicon.png
+|           |   |       
+|           |   \---other
+|           |           dropdown.png
+|           |           inspector.png
+|           |           screenshot_1.png
+|           |           
+|           +---localization
+|           |       en-us.lua
+|           |       es_ES.lua
+|           |       
+|           \---lovely
+|                   game_over.toml
+|                   malverk_override.toml
+|                   text_input.toml
+|                   
 +---.git
 |   |   .lovelyignore
 |   |   COMMIT_EDITMSG
@@ -176,6 +255,7 @@ C:\DEV\BALATRO-WORKSPACE
 |   |   +---2b
 |   |   |       893e2fd874db11242f6ba8acf8b0d87919de34
 |   |   |       a191f7fdd011b4df185bb1ac1ce4068e31bd6b
+|   |   |       bf83bfdbced69c3b1b20f0f521c5a7b000c447
 |   |   |       d15addb32516bd61923a35864b5e95a9d94777
 |   |   |       
 |   |   +---2d
@@ -361,6 +441,7 @@ C:\DEV\BALATRO-WORKSPACE
 |   |   |       
 |   |   +---71
 |   |   |       236cd2feac3a4caae1d0c64a644af8bc1501b3
+|   |   |       27ec4b28de02c92f49f9c01d89e0a79bc370a6
 |   |   |       
 |   |   +---73
 |   |   |       7e73e566842d6d6f5bb22f7304b41299fb5583
@@ -405,6 +486,7 @@ C:\DEV\BALATRO-WORKSPACE
 |   |   |       4ba531f0d14b8d076fa9d7edbad3cb7d506fec
 |   |   |       771ebff69f9dee1e875b6de394f8f305866340
 |   |   |       ba90898d826a630cb064967a117c11ab3e01b3
+|   |   |       eafe4564bc3db111abf71980cd645d12c4c66e
 |   |   |       
 |   |   +---87
 |   |   |       5f09230d75c51f7814861978aaba0887522335
@@ -689,6 +771,7 @@ C:\DEV\BALATRO-WORKSPACE
 |   |   |       
 |   |   +---ea
 |   |   |       a1147d05af56e0414c2f5010de4e566ddf96a6
+|   |   |       da576d21eca81a004a335de0b207fcba2bc334
 |   |   |       
 |   |   +---ec
 |   |   |       3e8e6fa0a77fc1f8a2b534b84f5ec3a22fb501

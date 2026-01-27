@@ -11,4 +11,4 @@
 .tools/
 
 # GP-2026-STRICT: Ignore automated bridge configurations
-BrrrDebugBridge/config.lua
+BrrrDebugBridge/config.lua.dump/ 

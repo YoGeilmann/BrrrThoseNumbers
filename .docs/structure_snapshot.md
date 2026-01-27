@@ -2,7 +2,6 @@ Auflistung der Ordnerpfade
 Volumeseriennummer : 1052-EFA5
 C:\DEV\BALATRO-WORKSPACE
 |   .gitignore
-|   criptssync.bat docs? final GP-2026 update with Code Assist triggers and language fix
 |   README.md
 |   
 +---.docs
@@ -105,10 +104,16 @@ C:\DEV\BALATRO-WORKSPACE
 |   |   |       3a65305d8cfeca0365dea26386149fa3f48659
 |   |   |       c9e96af3f9a64dc6c90651dadfa83d31b948ee
 |   |   |       
+|   |   +---17
+|   |   |       74c8b2d1c0f440c502ac1c91e4995374a6e201
+|   |   |       
 |   |   +---18
 |   |   |       156d4f640a7f8a4a7354d188de999fd3b1585e
 |   |   |       2397750f0e8452f34bd56f8c1cccca057d4a05
 |   |   |       a01cf68c9ecd6b4c57d57cfe03b3773650c4c0
+|   |   |       
+|   |   +---19
+|   |   |       769ee2252f4ad7d850ece57694f7738292c800
 |   |   |       
 |   |   +---1a
 |   |   |       2c4af1e34707f58fe1e9fca502632520c3f22a
@@ -156,11 +161,15 @@ C:\DEV\BALATRO-WORKSPACE
 |   |   +---2b
 |   |   |       893e2fd874db11242f6ba8acf8b0d87919de34
 |   |   |       a191f7fdd011b4df185bb1ac1ce4068e31bd6b
+|   |   |       d15addb32516bd61923a35864b5e95a9d94777
 |   |   |       
 |   |   +---2d
 |   |   |       1e35d9b6160da84568eda8dbcee4b3838828f0
 |   |   |       aec5e5a6599168041fbf57f41e81cffd4105d5
 |   |   |       f12fe23ac4569c4456d86718ae9c1cfe05ea79
+|   |   |       
+|   |   +---2e
+|   |   |       28836bd479424306a2d57dba7ae19e9df51889
 |   |   |       
 |   |   +---30
 |   |   |       c6079cd2ce61f3eb3149c9c639f209f0ddab53
@@ -223,6 +232,7 @@ C:\DEV\BALATRO-WORKSPACE
 |   |   |       b2698aa17b53c8b00c40fb21243614e0ed20c1
 |   |   |       
 |   |   +---4b
+|   |   |       657a911bfafd47b0a42bca38d8e370ebd11335
 |   |   |       9e22b70bae89e18a90dea211e1a22b0feefbdf
 |   |   |       c10b266bffa3b0a04740adb2a82c2b076802cd
 |   |   |       
@@ -305,6 +315,7 @@ C:\DEV\BALATRO-WORKSPACE
 |   |   |       
 |   |   +---70
 |   |   |       4b197769bec78d11555aa611133779aeaf642a
+|   |   |       e9cff907128c783128d904717bc91a6cddc885
 |   |   |       
 |   |   +---71
 |   |   |       236cd2feac3a4caae1d0c64a644af8bc1501b3
@@ -317,10 +328,14 @@ C:\DEV\BALATRO-WORKSPACE
 |   |   |       e7025a77997fa7834d8eb9eafa8b393669e2bd
 |   |   |       
 |   |   +---76
+|   |   |       27360240d9d9eec279cf9da2780786add2e664
 |   |   |       4dd1a2f50c89a37686893607763a1d45725d1b
 |   |   |       
 |   |   +---77
 |   |   |       ee0a0a2df36129c3bfed74e29ede1306c2a91d
+|   |   |       
+|   |   +---78
+|   |   |       8df905b4cd058d69429065392a5ea66708d97b
 |   |   |       
 |   |   +---79
 |   |   |       363e6dca0d7809160b6a50e2540cb5717dd0d5
@@ -360,6 +375,7 @@ C:\DEV\BALATRO-WORKSPACE
 |   |   |       
 |   |   +---8c
 |   |   |       66546e685ebdceb663daf6f31f83315e33a95d
+|   |   |       84ee0bf434515e8de4362d952c359f81b6f1a8
 |   |   |       c53e92a193cf17f2240536e514eb290aa57f69
 |   |   |       
 |   |   +---8d
@@ -446,6 +462,7 @@ C:\DEV\BALATRO-WORKSPACE
 |   |   |       e42b6fb775d0eb750ff98de09cee227cb42f7e
 |   |   |       
 |   |   +---b1
+|   |   |       04a250de8ba91a78e987c21f4c8417f59211a0
 |   |   |       830ea34b2cfd1d11e54e18d5f87e03a672f847
 |   |   |       a46ab7c7e8d87714f3c302a169ffb1f89f5c67
 |   |   |       
@@ -485,6 +502,7 @@ C:\DEV\BALATRO-WORKSPACE
 |   |   |       
 |   |   +---c5
 |   |   |       9703233531f12d6adcad85e251e4212278f73e
+|   |   |       a8f2f24833f25cc8280e989201488c66c956af
 |   |   |       
 |   |   +---c7
 |   |   |       03d2187551d1f97019ac918d11be456c17110a
@@ -510,6 +528,7 @@ C:\DEV\BALATRO-WORKSPACE
 |   |   |       1d06030512af36abc4bafabb81c9d8e11acfdf
 |   |   |       
 |   |   +---cd
+|   |   |       e8af16ba5cc0c8ed54d806b0589227d7d1d145
 |   |   |       fe1da1d90b9af432a5535f0f0f3ed1afbc2a03
 |   |   |       
 |   |   +---ce
@@ -596,6 +615,9 @@ C:\DEV\BALATRO-WORKSPACE
 |   |   +---ef
 |   |   |       d547fcfe29617f008e8a5fad3225f100644d16
 |   |   |       
+|   |   +---f1
+|   |   |       1df8b54b1e5c8d67edfbd09e49fd1e03634536
+|   |   |       
 |   |   +---f2
 |   |   |       b15ad06ce4a849565b1c1a6d2a8be56e7725e5
 |   |   |       beaa1554a119244506f2247265298c2d43497d
@@ -610,6 +632,7 @@ C:\DEV\BALATRO-WORKSPACE
 |   |   |       ea2b0204d37c5d1f36848b384e683e26935ac3
 |   |   |       
 |   |   +---f6
+|   |   |       1ce86c50091ed90678c57750be95c8d522b13b
 |   |   |       55c8fdd77622b72957b313ed5b9a87bf58c333
 |   |   |       
 |   |   +---f9

@@ -41,54 +41,47 @@ end
 -- Execute config load immediately on mod initialization
 load_bridge_config()
 
--- [COMPONENT] Refined Splash Screen Override (Intro Bypass)
--- Logic: Bypass if in "auto" mode (speed) OR if "show_intro" is false.
--- This allows "manual intro" to function correctly as a diagnostic state.
+-- [COMPONENT] Refined Splash Screen Override
 if config.mode == "auto" or not config.show_intro then
     if Game then
-        local original_splash = Game.splash_screen
         function Game:splash_screen()
-            print("[BRRR_BRIDGE:INTRO] Bypass active (Mode: " .. config.mode .. ") | Skipping splash_screen")
-            -- Immediate transition to main_menu logic
-            if self.main_menu then self:main_menu() end
+            print("[BRRR_BRIDGE:INTRO] Safe Bypass: Waiting for Main Menu stability...")
+            -- We call main_menu directly to bypass the splash screen.
+            -- This allows the engine to complete shader initialization cleanly.
+            self:main_menu()
         end
-        -- Fallback for native engine flag
-        if G and G.SETTINGS then G.SETTINGS.skip_splash = 'Yes' end
     end
-else
-    print("[BRRR_BRIDGE:INTRO] Native boot: Intro will be shown (Manual Mode)")
 end
 
--- [COMPONENT] Autopilot Controller
--- Hooking into main_menu to trigger automation
+-- [COMPONENT] Autopilot Controller (Engine-Native Launch)
 if config.mode == "auto" then
     local original_main_menu = Game.main_menu
     function Game:main_menu()
-        -- Call original function first to ensure engine state is ready
         original_main_menu(self)
         
-        -- Check if autopilot should fire or if we are returning from a run
         if G_BRRR_BRIDGE_FIRST_LOAD then
-            print("[BRRR_BRIDGE:AUTO] Condition met: Starting automated run sequence")
-            G_BRRR_BRIDGE_FIRST_LOAD = false -- Set lock to prevent re-triggering
+            G_BRRR_BRIDGE_FIRST_LOAD = false
             
-            -- Use G.E_MANAGER to wait for the next frame (safest injection point)
             G.E_MANAGER:add_event(Event({
-                trigger = 'immediate',
+                trigger = 'after',
+                delay = 1.0,
                 func = function()
-                    print("[BRRR_BRIDGE:AUTO] API-Call: start_run | Deck: " .. tostring(config.deck))
-                    G.FUNCS.start_run(nil, {
-                        deck = config.deck or 'b_red',
-                        stake = config.stake or 1
-                    })
+                    -- STRESS-TEST: Only start if the menu is stable
+                    if G.STATE == G.STATES.MAIN_MENU and G.FUNCS.start_run then
+                        print("[BRRR_BRIDGE:LAUNCH] Executing native start sequence...")
+                        
+                        -- 1. Simulate UI Cleanup (prevents Black Screen via Layer-Overlay)
+                        if G.MAIN_MENU_UI then G.MAIN_MENU_UI:remove() end
+                        
+                        -- 2. Call Native Start Function
+                        G.FUNCS.start_run(nil, {
+                            deck = config.deck or 'b_red',
+                            stake = config.stake or 1
+                        })
+                    end
                     return true
                 end
             }))
-        else
-            -- Trace for forensic audit: why didn't the run start?
-            print("[BRRR_BRIDGE:AUTO] Suppressed: User returned to menu from active session")
         end
     end
-else
-    print("[BRRR_BRIDGE:MANUAL] Automation disabled via config flag")
 end

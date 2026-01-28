@@ -4,6 +4,7 @@ C:\DEV\BALATRO-WORKSPACE
 |   .gitignore
 |   README.md
 |   
++----Force
 +---.docs
 |       .lovelyignore
 |       BOOT_RULES.md
@@ -11,6 +12,8 @@ C:\DEV\BALATRO-WORKSPACE
 |       structure_snapshot.md
 |       
 +---.dump
+|   |   Balatro.zip
+|   |   
 |   +---balatro_source
 |   |       Balatro.exe
 |   |       https.dll
@@ -28,73 +31,390 @@ C:\DEV\BALATRO-WORKSPACE
 |   |       steam_appid.txt
 |   |       version.dll
 |   |       
-|   \---mods
-|       +---DebugPlus
-|       |   |   keys.txt
-|       |   |   README.MD
-|       |   |   smods.json
-|       |   |   
-|       |   +---assets
-|       |   |   +---1x
-|       |   |   |       modicon.png
-|       |   |   |       
-|       |   |   \---2x
-|       |   |           modicon.png
-|       |   |           
-|       |   +---debugplus
-|       |   |       api.lua
-|       |   |       config.lua
-|       |   |       console.lua
-|       |   |       core.lua
-|       |   |       logger.lua
-|       |   |       prof.lua
-|       |   |       smods.lua
-|       |   |       ui.lua
-|       |   |       unicode.lua
-|       |   |       util.lua
-|       |   |       watcher.lua
-|       |   |       
-|       |   +---docs
-|       |   |       changelog.md
-|       |   |       dev.md
-|       |   |       
-|       |   \---lovely
-|       |           console.toml
-|       |           debug-enhancements.toml
-|       |           misc.toml
-|       |           modules.toml
-|       |           
-|       \---DebugPlusPlus
-|           |   aux_functions.lua
-|           |   callback_functions.lua
-|           |   config.lua
-|           |   main.lua
-|           |   main_UI.lua
-|           |   overrides.lua
-|           |   README.md
-|           |   smods.json
+|   +---mods
+|   |   +---DebugPlus
+|   |   |   |   keys.txt
+|   |   |   |   README.MD
+|   |   |   |   smods.json
+|   |   |   |   
+|   |   |   +---assets
+|   |   |   |   +---1x
+|   |   |   |   |       modicon.png
+|   |   |   |   |       
+|   |   |   |   \---2x
+|   |   |   |           modicon.png
+|   |   |   |           
+|   |   |   +---debugplus
+|   |   |   |       api.lua
+|   |   |   |       config.lua
+|   |   |   |       console.lua
+|   |   |   |       core.lua
+|   |   |   |       logger.lua
+|   |   |   |       prof.lua
+|   |   |   |       smods.lua
+|   |   |   |       ui.lua
+|   |   |   |       unicode.lua
+|   |   |   |       util.lua
+|   |   |   |       watcher.lua
+|   |   |   |       
+|   |   |   +---docs
+|   |   |   |       changelog.md
+|   |   |   |       dev.md
+|   |   |   |       
+|   |   |   \---lovely
+|   |   |           console.toml
+|   |   |           debug-enhancements.toml
+|   |   |           misc.toml
+|   |   |           modules.toml
+|   |   |           
+|   |   \---DebugPlusPlus
+|   |       |   aux_functions.lua
+|   |       |   callback_functions.lua
+|   |       |   config.lua
+|   |       |   main.lua
+|   |       |   main_UI.lua
+|   |       |   overrides.lua
+|   |       |   README.md
+|   |       |   smods.json
+|   |       |   
+|   |       +---assets
+|   |       |   +---1x
+|   |       |   |       modicon.png
+|   |       |   |       
+|   |       |   +---2x
+|   |       |   |       modicon.png
+|   |       |   |       
+|   |       |   \---other
+|   |       |           dropdown.png
+|   |       |           inspector.png
+|   |       |           screenshot_1.png
+|   |       |           
+|   |       +---localization
+|   |       |       en-us.lua
+|   |       |       es_ES.lua
+|   |       |       
+|   |       \---lovely
+|   |               game_over.toml
+|   |               malverk_override.toml
+|   |               text_input.toml
+|   |               
+|   \---source_raw
+|       |   back.lua
+|       |   blind.lua
+|       |   card.lua
+|       |   cardarea.lua
+|       |   card_character.lua
+|       |   challenges.lua
+|       |   conf.lua
+|       |   game.lua
+|       |   globals.lua
+|       |   main.lua
+|       |   tag.lua
+|       |   version.jkr
+|       |   
+|       +---engine
+|       |       animatedsprite.lua
+|       |       controller.lua
+|       |       event.lua
+|       |       http_manager.lua
+|       |       moveable.lua
+|       |       node.lua
+|       |       object.lua
+|       |       particles.lua
+|       |       profile.lua
+|       |       save_manager.lua
+|       |       sound_manager.lua
+|       |       sprite.lua
+|       |       string_packer.lua
+|       |       text.lua
+|       |       ui.lua
+|       |       
+|       +---functions
+|       |       button_callbacks.lua
+|       |       common_events.lua
+|       |       misc_functions.lua
+|       |       state_events.lua
+|       |       test_functions.lua
+|       |       UI_definitions.lua
+|       |       
+|       +---localization
+|       |       de.lua
+|       |       en-us.lua
+|       |       es_419.lua
+|       |       es_ES.lua
+|       |       fr.lua
+|       |       id.lua
+|       |       it.lua
+|       |       ja.lua
+|       |       ko.lua
+|       |       nl.lua
+|       |       pl.lua
+|       |       pt_BR.lua
+|       |       ru.lua
+|       |       zh_CN.lua
+|       |       zh_TW.lua
+|       |       
+|       \---resources
+|           |   gamecontrollerdb.txt
 |           |   
-|           +---assets
-|           |   +---1x
-|           |   |       modicon.png
-|           |   |       
-|           |   +---2x
-|           |   |       modicon.png
-|           |   |       
-|           |   \---other
-|           |           dropdown.png
-|           |           inspector.png
-|           |           screenshot_1.png
-|           |           
-|           +---localization
-|           |       en-us.lua
-|           |       es_ES.lua
+|           +---fonts
+|           |       GoNotoCJKCore.ttf
+|           |       GoNotoCurrent-Bold.ttf
+|           |       m6x11plus.ttf
+|           |       NotoSans-Bold.ttf
+|           |       NotoSansJP-Bold.ttf
+|           |       NotoSansKR-Bold.ttf
+|           |       NotoSansSC-Bold.ttf
+|           |       NotoSansTC-Bold.ttf
 |           |       
-|           \---lovely
-|                   game_over.toml
-|                   malverk_override.toml
-|                   text_input.toml
-|                   
+|           +---shaders
+|           |       background.fs
+|           |       booster.fs
+|           |       CRT.fs
+|           |       debuff.fs
+|           |       dissolve.fs
+|           |       flame.fs
+|           |       flash.fs
+|           |       foil.fs
+|           |       gold_seal.fs
+|           |       holo.fs
+|           |       hologram.fs
+|           |       negative.fs
+|           |       negative_shine.fs
+|           |       played.fs
+|           |       polychrome.fs
+|           |       skew.fs
+|           |       splash.fs
+|           |       vortex.fs
+|           |       voucher.fs
+|           |       
+|           +---sounds
+|           |       ambientFire1.ogg
+|           |       ambientFire2.ogg
+|           |       ambientFire3.ogg
+|           |       ambientOrgan1.ogg
+|           |       button.ogg
+|           |       cancel.ogg
+|           |       card1.ogg
+|           |       card3.ogg
+|           |       cardFan2.ogg
+|           |       cardSlide1.ogg
+|           |       cardSlide2.ogg
+|           |       chips1.ogg
+|           |       chips2.ogg
+|           |       coin1.ogg
+|           |       coin2.ogg
+|           |       coin3.ogg
+|           |       coin4.ogg
+|           |       coin5.ogg
+|           |       coin6.ogg
+|           |       coin7.ogg
+|           |       crumple1.ogg
+|           |       crumple2.ogg
+|           |       crumple3.ogg
+|           |       crumple4.ogg
+|           |       crumple5.ogg
+|           |       crumpleLong1.ogg
+|           |       crumpleLong2.ogg
+|           |       explosion1.ogg
+|           |       explosion_buildup1.ogg
+|           |       explosion_release1.ogg
+|           |       foil1.ogg
+|           |       foil2.ogg
+|           |       generic1.ogg
+|           |       glass1.ogg
+|           |       glass2.ogg
+|           |       glass3.ogg
+|           |       glass4.ogg
+|           |       glass5.ogg
+|           |       glass6.ogg
+|           |       gold_seal.ogg
+|           |       gong.ogg
+|           |       highlight1.ogg
+|           |       highlight2.ogg
+|           |       holo1.ogg
+|           |       introPad1.ogg
+|           |       magic_crumple.ogg
+|           |       magic_crumple2.ogg
+|           |       magic_crumple3.ogg
+|           |       multhit1.ogg
+|           |       multhit2.ogg
+|           |       music1.ogg
+|           |       music2.ogg
+|           |       music3.ogg
+|           |       music4.ogg
+|           |       music5.ogg
+|           |       negative.ogg
+|           |       other1.ogg
+|           |       paper1.ogg
+|           |       polychrome1.ogg
+|           |       slice1.ogg
+|           |       splash_buildup.ogg
+|           |       tarot1.ogg
+|           |       tarot2.ogg
+|           |       timpani.ogg
+|           |       voice1.ogg
+|           |       voice10.ogg
+|           |       voice11.ogg
+|           |       voice2.ogg
+|           |       voice3.ogg
+|           |       voice4.ogg
+|           |       voice5.ogg
+|           |       voice6.ogg
+|           |       voice7.ogg
+|           |       voice8.ogg
+|           |       voice9.ogg
+|           |       whoosh.ogg
+|           |       whoosh1.ogg
+|           |       whoosh2.ogg
+|           |       whoosh_long.ogg
+|           |       win.ogg
+|           |       
+|           \---textures
+|               +---1x
+|               |   |   8BitDeck.png
+|               |   |   8BitDeck_opt2.png
+|               |   |   balatro.png
+|               |   |   balatro_alt.png
+|               |   |   BlindChips.png
+|               |   |   boosters.png
+|               |   |   chips.png
+|               |   |   Enhancers.png
+|               |   |   gamepad_ui.png
+|               |   |   icons.png
+|               |   |   Jokers.png
+|               |   |   localthunk-logo.png
+|               |   |   playstack-logo.png
+|               |   |   ShopSignAnimation.png
+|               |   |   stickers.png
+|               |   |   tags.png
+|               |   |   Tarots.png
+|               |   |   ui_assets.png
+|               |   |   ui_assets_opt2.png
+|               |   |   Vouchers.png
+|               |   |   
+|               |   \---collabs
+|               |           collab_AC_1.png
+|               |           collab_AC_2.png
+|               |           collab_AU_1.png
+|               |           collab_AU_2.png
+|               |           collab_BUG_1.png
+|               |           collab_BUG_2.png
+|               |           collab_C7_1.png
+|               |           collab_C7_2.png
+|               |           collab_CL_1.png
+|               |           collab_CL_2.png
+|               |           collab_CR_1.png
+|               |           collab_CR_2.png
+|               |           collab_CYP_1.png
+|               |           collab_CYP_2.png
+|               |           collab_D2_1.png
+|               |           collab_D2_2.png
+|               |           collab_DBD_1.png
+|               |           collab_DBD_2.png
+|               |           collab_DS_1.png
+|               |           collab_DS_2.png
+|               |           collab_DTD_1.png
+|               |           collab_DTD_2.png
+|               |           collab_EG_1.png
+|               |           collab_EG_2.png
+|               |           collab_FO_1.png
+|               |           collab_FO_2.png
+|               |           collab_PC_1.png
+|               |           collab_PC_2.png
+|               |           collab_R_1.png
+|               |           collab_R_2.png
+|               |           collab_SK_1.png
+|               |           collab_SK_2.png
+|               |           collab_STP_1.png
+|               |           collab_STP_2.png
+|               |           collab_STS_1.png
+|               |           collab_STS_2.png
+|               |           collab_SV_1.png
+|               |           collab_SV_2.png
+|               |           collab_TBoI_1.png
+|               |           collab_TBoI_2.png
+|               |           collab_TW_1.png
+|               |           collab_TW_2.png
+|               |           collab_VS_1.png
+|               |           collab_VS_2.png
+|               |           collab_WF_1.png
+|               |           collab_WF_2.png
+|               |           collab_XR_1.png
+|               |           collab_XR_2.png
+|               |           
+|               \---2x
+|                   |   8BitDeck.png
+|                   |   8BitDeck_opt2.png
+|                   |   balatro.png
+|                   |   balatro_alt.png
+|                   |   BlindChips.png
+|                   |   boosters.png
+|                   |   chips.png
+|                   |   Enhancers.png
+|                   |   gamepad_ui.png
+|                   |   icons.png
+|                   |   Jokers.png
+|                   |   localthunk-logo.png
+|                   |   playstack-logo.png
+|                   |   ShopSignAnimation.png
+|                   |   stickers.png
+|                   |   tags.png
+|                   |   Tarots.png
+|                   |   ui_assets.png
+|                   |   ui_assets_opt2.png
+|                   |   Vouchers.png
+|                   |   
+|                   \---collabs
+|                           collab_AC_1.png
+|                           collab_AC_2.png
+|                           collab_AU_1.png
+|                           collab_AU_2.png
+|                           collab_BUG_1.png
+|                           collab_BUG_2.png
+|                           collab_C7_1.png
+|                           collab_C7_2.png
+|                           collab_CL_1.png
+|                           collab_CL_2.png
+|                           collab_CR_1.png
+|                           collab_CR_2.png
+|                           collab_CYP_1.png
+|                           collab_CYP_2.png
+|                           collab_D2_1.png
+|                           collab_D2_2.png
+|                           collab_DBD_1.png
+|                           collab_DBD_2.png
+|                           collab_DS_1.png
+|                           collab_DS_2.png
+|                           collab_DTD_1.png
+|                           collab_DTD_2.png
+|                           collab_EG_1.png
+|                           collab_EG_2.png
+|                           collab_FO_1.png
+|                           collab_FO_2.png
+|                           collab_PC_1.png
+|                           collab_PC_2.png
+|                           collab_R_1.png
+|                           collab_R_2.png
+|                           collab_SK_1.png
+|                           collab_SK_2.png
+|                           collab_STP_1.png
+|                           collab_STP_2.png
+|                           collab_STS_1.png
+|                           collab_STS_2.png
+|                           collab_SV_1.png
+|                           collab_SV_2.png
+|                           collab_TBoI_1.png
+|                           collab_TBoI_2.png
+|                           collab_TW_1.png
+|                           collab_TW_2.png
+|                           collab_VS_1.png
+|                           collab_VS_2.png
+|                           collab_WF_1.png
+|                           collab_WF_2.png
+|                           collab_XR_1.png
+|                           collab_XR_2.png
+|                           
 +---.git
 |   |   .lovelyignore
 |   |   COMMIT_EDITMSG
@@ -407,6 +727,7 @@ C:\DEV\BALATRO-WORKSPACE
 |   |   +---52
 |   |   |       3eea5ebd4110cc207e832d23a915e9b23dd11a
 |   |   |       9f017e20ef3d68355b81143f80ad0bc6232148
+|   |   |       a4cdf5aa19f928ab35bed7d2cbbda90035a765
 |   |   |       
 |   |   +---53
 |   |   |       469d321c101e1c889c25bec3a951f7e67860ac
@@ -499,6 +820,9 @@ C:\DEV\BALATRO-WORKSPACE
 |   |   +---71
 |   |   |       236cd2feac3a4caae1d0c64a644af8bc1501b3
 |   |   |       27ec4b28de02c92f49f9c01d89e0a79bc370a6
+|   |   |       
+|   |   +---72
+|   |   |       a8448ddb06a8e27cdc4878d0445ea3a34ecbde
 |   |   |       
 |   |   +---73
 |   |   |       7e73e566842d6d6f5bb22f7304b41299fb5583
@@ -621,6 +945,7 @@ C:\DEV\BALATRO-WORKSPACE
 |   |   |       
 |   |   +---9c
 |   |   |       12cebcbba93327f7263d8931b166ddddef144d
+|   |   |       4bb309267c49f1f5bf0dee5876837a0c38ecd3
 |   |   |       9521fb3ced24c2eb39ba89629c7e03a033c465
 |   |   |       f1c801216542c8c4f1e9ba90c5802aa1c09de3
 |   |   |       fff894d0cd29b1d52a7b3ab4f0fbc1f699e015
@@ -751,6 +1076,7 @@ C:\DEV\BALATRO-WORKSPACE
 |   |   |       7c9d5ba9e41510dc4cba7e87b8ea53d299b0b4
 |   |   |       
 |   |   +---c5
+|   |   |       148c9535c320e5d1acc884fcd61a4f4d39d4fa
 |   |   |       9703233531f12d6adcad85e251e4212278f73e
 |   |   |       a8f2f24833f25cc8280e989201488c66c956af
 |   |   |       
@@ -808,6 +1134,7 @@ C:\DEV\BALATRO-WORKSPACE
 |   |   |       1464d2fb1b61373f69a57cb31c2fd6deb88b7b
 |   |   |       28ed5b0d4960c814507c2957b6edb62d66fc32
 |   |   |       337b05aba937564cacdc42e03848b44a5bcaa0
+|   |   |       9a6f81e84013adefdfd8f72c14c75382fac663
 |   |   |       
 |   |   +---d7
 |   |   |       11c922325816c0c6f845b37545f4b3c1f0243c
@@ -829,6 +1156,7 @@ C:\DEV\BALATRO-WORKSPACE
 |   |   |       6cd5ab4f68dd9f0cde1065a888e2d68b1f0e23
 |   |   |       
 |   |   +---dc
+|   |   |       54d114ee40390707075a7098e91359112c8161
 |   |   |       681f003f1cc5d276404673404d04c01c2be982
 |   |   |       
 |   |   +---dd

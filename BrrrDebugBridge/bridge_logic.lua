@@ -4,6 +4,7 @@
 
 local mod_path = "Mods/BrrrDebugBridge/"
 local config_path = mod_path .. "config.lua"
+local launched = false
 
 -- Initial table state to prevent nil access during load
 local config = { 
@@ -55,58 +56,61 @@ end
 
 -- [COMPONENT] Autopilot Controller (Source-Validated & Profile-Safe)
 if config.mode == "auto" then
-    local original_main_menu = Game.main_menu
-    function Game:main_menu()
-        original_main_menu(self)
-        
-        if G_BRRR_BRIDGE_FIRST_LOAD then
-            G_BRRR_BRIDGE_FIRST_LOAD = false
-            
-            local stability_counter = 0
-            
-            local function attempt_auto_launch(retries)
-                G.E_MANAGER:add_event(Event({
-                    trigger = 'after',
-                    delay = 0.5,
-                    func = function()
-                        -- STRESS-TEST: MENU state must be 11, and Profile data must be fully loaded
-                        local is_menu = G.STATE == G.STATES.MENU
-                        local is_data_ready = G.PROFILES and G.SETTINGS and G.SETTINGS.profile
+    local old_update = Game.update
+    function Game:update(dt)
+        if old_update then old_update(self, dt) end
 
-                        print(string.format("[BRRR_DIAG] State: %s, Comp: %s, Wipe: %s, DataReady: %s", 
-                            tostring(G.STATE), tostring(G.STATE_COMPLETE), tostring(G.screenwipe ~= nil), 
-                            tostring(G.SETTINGS and G.SETTINGS.profile ~= nil)))
+        -- Nuclear Guard: Prevent UI crashes if settings are corrupt
+        if G.SETTINGS and G.SETTINGS.GAMESPEED == nil then
+            print("[BRRR_LOG:CRITICAL] G.SETTINGS.GAMESPEED was nil! Forcing to 1.")
+            G.SETTINGS.GAMESPEED = 1
+        end
 
-                        -- Logic: Check stability (Grace Period)
-                        if is_menu and is_data_ready and (not G.screenwipe) then
-                            stability_counter = stability_counter + 1
-                            print("[BRRR_BRIDGE] Stability check: " .. stability_counter .. "/10")
-                        else
-                            stability_counter = 0
-                        end
+        -- Trigger only once per session (Cold Boot)
+        if G_BRRR_BRIDGE_FIRST_LOAD and not launched then
+            -- Condition: Menu State (11) and Data Ready
+            if G.STATE == G.STATES.MENU and G.P_CENTERS and G.P_CENTERS.j_joker then
+                launched = true
+                G_BRRR_BRIDGE_FIRST_LOAD = false -- Consume the lock
 
-                        if stability_counter >= 10 and G.FUNCS.start_run then
-                            print("[BRRR_BRIDGE:LAUNCH] Attempting launch: State Ready")
-                            
-                            G.FUNCS.start_run(nil, {
-                                deck = config.deck or 'b_red',
-                                stake = config.stake or 1,
-                                seed = config.seed,
-                                challenge = config.challenge
-                            })
-                            return true
-                        elseif retries > 0 then
-                            print("[BRRR_BRIDGE:RETRY] Waiting for stable MENU and Profile... (" .. retries .. ")")
-                            attempt_auto_launch(retries - 1)
-                            return true
-                        else
-                            print("[BRRR_BRIDGE:ERROR] Auto-launch timeout. State: " .. tostring(G.STATE))
-                            return true
-                        end
-                    end
-                }))
+                print("[BRRR_LOG:ATOMIC] Triggering Atomic Launch Sequence...")
+
+                -- A. Capture User Speed (Robust)
+                local user_speed = (G.SETTINGS and G.SETTINGS.GAMESPEED) or 1
+                print("[BRRR_LOG:SPEED] Initial User Speed: " .. tostring(user_speed))
+
+                -- B. Warp Speed
+                G.SETTINGS.GAMESPEED = 100
+                print("[BRRR_LOG:SPEED] Warp Speed Engaged: " .. tostring(G.SETTINGS.GAMESPEED))
+
+                -- Force immediate update for internal engine references
+                if G.SPEEDFACTOR then G.SPEEDFACTOR = 100 end
+                G:save_settings()
+                
+                -- C. UI Cleanup
+                if G.MAIN_MENU_UI then G.MAIN_MENU_UI:remove(); G.MAIN_MENU_UI = nil end
+
+                -- D. Start Run
+                G.FUNCS.start_run(nil, {
+                    deck = config.deck or 'b_red',
+                    stake = config.stake or 1,
+                    seed = config.seed,
+                    challenge = config.challenge
+                })
+
+                -- E. State Fix
+                G.STATE_COMPLETE = true
+
+                -- F. Restore Speed
+                G.SETTINGS.GAMESPEED = user_speed
+                if G.SPEEDFACTOR then G.SPEEDFACTOR = user_speed end
+                print("[BRRR_LOG:SPEED] Speed Restored: " .. tostring(G.SETTINGS.GAMESPEED))
+                
+                -- Persist settings to avoid UI desync
+                if G.save_settings then G:save_settings() end
+                
+                print("[BRRR_LOG:ATOMIC] Sequence Complete.")
             end
-            attempt_auto_launch(100)
         end
     end
 end

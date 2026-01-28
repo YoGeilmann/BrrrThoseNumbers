@@ -53,7 +53,7 @@ if config.mode == "auto" or not config.show_intro then
     end
 end
 
--- [COMPONENT] Autopilot Controller (Engine-Native Launch)
+-- [COMPONENT] Autopilot Controller (Source-Validated & Profile-Safe)
 if config.mode == "auto" then
     local original_main_menu = Game.main_menu
     function Game:main_menu()
@@ -62,26 +62,51 @@ if config.mode == "auto" then
         if G_BRRR_BRIDGE_FIRST_LOAD then
             G_BRRR_BRIDGE_FIRST_LOAD = false
             
-            G.E_MANAGER:add_event(Event({
-                trigger = 'after',
-                delay = 1.0,
-                func = function()
-                    -- STRESS-TEST: Only start if the menu is stable
-                    if G.STATE == G.STATES.MAIN_MENU and G.FUNCS.start_run then
-                        print("[BRRR_BRIDGE:LAUNCH] Executing native start sequence...")
-                        
-                        -- 1. Simulate UI Cleanup (prevents Black Screen via Layer-Overlay)
-                        if G.MAIN_MENU_UI then G.MAIN_MENU_UI:remove() end
-                        
-                        -- 2. Call Native Start Function
-                        G.FUNCS.start_run(nil, {
-                            deck = config.deck or 'b_red',
-                            stake = config.stake or 1
-                        })
+            local stability_counter = 0
+            
+            local function attempt_auto_launch(retries)
+                G.E_MANAGER:add_event(Event({
+                    trigger = 'after',
+                    delay = 0.5,
+                    func = function()
+                        -- STRESS-TEST: MENU state must be 11, and Profile data must be fully loaded
+                        local is_menu = G.STATE == G.STATES.MENU
+                        local is_data_ready = G.PROFILES and G.SETTINGS and G.SETTINGS.profile
+
+                        print(string.format("[BRRR_DIAG] State: %s, Comp: %s, Wipe: %s, DataReady: %s", 
+                            tostring(G.STATE), tostring(G.STATE_COMPLETE), tostring(G.screenwipe ~= nil), 
+                            tostring(G.SETTINGS and G.SETTINGS.profile ~= nil)))
+
+                        -- Logic: Check stability (Grace Period)
+                        if is_menu and is_data_ready and (not G.screenwipe) then
+                            stability_counter = stability_counter + 1
+                            print("[BRRR_BRIDGE] Stability check: " .. stability_counter .. "/10")
+                        else
+                            stability_counter = 0
+                        end
+
+                        if stability_counter >= 10 and G.FUNCS.start_run then
+                            print("[BRRR_BRIDGE:LAUNCH] Attempting launch: State Ready")
+                            
+                            G.FUNCS.start_run(nil, {
+                                deck = config.deck or 'b_red',
+                                stake = config.stake or 1,
+                                seed = config.seed,
+                                challenge = config.challenge
+                            })
+                            return true
+                        elseif retries > 0 then
+                            print("[BRRR_BRIDGE:RETRY] Waiting for stable MENU and Profile... (" .. retries .. ")")
+                            attempt_auto_launch(retries - 1)
+                            return true
+                        else
+                            print("[BRRR_BRIDGE:ERROR] Auto-launch timeout. State: " .. tostring(G.STATE))
+                            return true
+                        end
                     end
-                    return true
-                end
-            }))
+                }))
+            end
+            attempt_auto_launch(100)
         end
     end
 end

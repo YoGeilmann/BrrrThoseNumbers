@@ -1,4 +1,3 @@
---- GP-2026-STRICT: Bridge Logic - Session-Controller & Autopilot
 --- GP-2026-STRICT: Bridge Logic (v27.0)
 --- Session-Controller & Autopilot
 

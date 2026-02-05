@@ -2,9 +2,12 @@ Auflistung der Ordnerpfade
 Volumeseriennummer : 1052-EFA5
 C:\DEV\BALATRO-WORKSPACE
 |   .gitignore
+|   Backup
+|   Injection
 |   README.md
+|   [FAIL]
+|   [PASS]
 |   
-+----Force
 +---.docs
 |       .lovelyignore
 |       BOOT_RULES.md
@@ -473,12 +476,14 @@ C:\DEV\BALATRO-WORKSPACE
 |   |   +---03
 |   |   |       02fa3c14683685bc2b903a87c76432700a1e10
 |   |   |       3de9706ead7d6ed4852c78895b50c91a3cdc63
+|   |   |       88a190e3f5b103cb66933633ada07c16259008
 |   |   |       
 |   |   +---04
 |   |   |       6d7ef07fdab72dbb74033fea47aae0f5ee1b40
 |   |   |       76b354576f5311334b58b99dfd8ec42c5d01a9
 |   |   |       
 |   |   +---05
+|   |   |       0b0adbb99f3d2b39d35810a5bd6e59d1435649
 |   |   |       8c53f525ab2134e7c2e92c1f1f26fad2971ea3
 |   |   |       
 |   |   +---06
@@ -517,6 +522,7 @@ C:\DEV\BALATRO-WORKSPACE
 |   |   |       7d030a8dc90f5edb78c3d35eca87fad9cd021c
 |   |   |       
 |   |   +---0e
+|   |   |       227fd8a9e7953bcd44c4d469dc235927831177
 |   |   |       8003e494005dc6c9ac88a92363ba956d03a0b9
 |   |   |       
 |   |   +---10
@@ -612,6 +618,7 @@ C:\DEV\BALATRO-WORKSPACE
 |   |   |       ad7177917d51b73156fbd93449ed7412e1851b
 |   |   |       bf83bfdbced69c3b1b20f0f521c5a7b000c447
 |   |   |       d15addb32516bd61923a35864b5e95a9d94777
+|   |   |       e4341b9ae78ebda94f0cfa29b5810d6c697d99
 |   |   |       e8269156d300e01b1d5af765cf6b4442ffbcfd
 |   |   |       
 |   |   +---2d
@@ -659,6 +666,7 @@ C:\DEV\BALATRO-WORKSPACE
 |   |   |       51eb171cc6dfb380f452b2558febc7f74458d3
 |   |   |       5f2d1b7daffda4d29deb7a9f1018b7ef80756b
 |   |   |       d6a95260a960d122dc35e33307e4a882833201
+|   |   |       d7dda68a99426340255a56d73f9d88e1fbc27c
 |   |   |       
 |   |   +---3b
 |   |   |       3f79f63b20feac8d847a3eb9a74d3bb0235fe6
@@ -667,6 +675,7 @@ C:\DEV\BALATRO-WORKSPACE
 |   |   |       
 |   |   +---3c
 |   |   |       a8c5a37a69faef9b4d1572c5b385841866554a
+|   |   |       d697362037620b26a6c996398e2e475bcb8b0d
 |   |   |       dce0dc596754f727f6338e5f080d4bddcab48d
 |   |   |       e0d52358d7af6cd3645287e456030e1a2b20f0
 |   |   |       
@@ -716,6 +725,7 @@ C:\DEV\BALATRO-WORKSPACE
 |   |   |       fa92ed3de27fd08b7143184fde0850c73b2c7a
 |   |   |       
 |   |   +---4a
+|   |   |       582fa9f4335a6ca5be981001228c6a5f7f8b27
 |   |   |       8e755f6e777c31faa70f4f60a98f9507290b1c
 |   |   |       
 |   |   +---4b
@@ -723,6 +733,9 @@ C:\DEV\BALATRO-WORKSPACE
 |   |   |       9e22b70bae89e18a90dea211e1a22b0feefbdf
 |   |   |       c10b266bffa3b0a04740adb2a82c2b076802cd
 |   |   |       f54090003653bf3978a03b753b17a694f23b2d
+|   |   |       
+|   |   +---4c
+|   |   |       0be70dc0aab800f2853cd67ffc4cf2718cafb1
 |   |   |       
 |   |   +---4d
 |   |   |       704d3b7c9cd8c7092150ac0486b9a62d3a70ce
@@ -808,6 +821,7 @@ C:\DEV\BALATRO-WORKSPACE
 |   |   |       e25b117ade1d41a00b6a303ef935941d037f7a
 |   |   |       
 |   |   +---67
+|   |   |       387fb788267b8a7ea44b4f23eca0c54936a33b
 |   |   |       a98b0442568b9101d44ca585287f475e54479f
 |   |   |       
 |   |   +---68
@@ -882,6 +896,7 @@ C:\DEV\BALATRO-WORKSPACE
 |   |   +---7f
 |   |   |       87597ed9eb27383e24a5c9c44801394b69d393
 |   |   |       c2548784d1402bff2195acaaf9efc7ee30b154
+|   |   |       c2e3e8c209e2157fbf5969dc6bd9cd6d563ee5
 |   |   |       
 |   |   +---80
 |   |   |       d422da7de27c08a7b232a51d14c0abafa23ed6
@@ -940,6 +955,7 @@ C:\DEV\BALATRO-WORKSPACE
 |   |   |       58dbed4823d731bafdfef13978d413d7a386eb
 |   |   |       
 |   |   +---91
+|   |   |       6b5dc059c3491f86a144b39ffedb82b140159c
 |   |   |       a694a5c7259143c1314d176a154c65b3e592ef
 |   |   |       
 |   |   +---92
@@ -957,6 +973,9 @@ C:\DEV\BALATRO-WORKSPACE
 |   |   |       40f310df57fde03090bc6d4a351b29e5377730
 |   |   |       709b9bacfef0f58367b20a14dbce9d57b1016b
 |   |   |       
+|   |   +---95
+|   |   |       dff772349721c5dc5a5f8db0209c016cdee960
+|   |   |       
 |   |   +---97
 |   |   |       b370e9b07cae8c079e6495b1dfb5df8241e4fc
 |   |   |       c4ce9f77a51f9b97ca2f105ca241309d6c401d
@@ -973,6 +992,7 @@ C:\DEV\BALATRO-WORKSPACE
 |   |   +---9c
 |   |   |       12cebcbba93327f7263d8931b166ddddef144d
 |   |   |       4bb309267c49f1f5bf0dee5876837a0c38ecd3
+|   |   |       785a3f6c45bdbc0c036e10b014163616683839
 |   |   |       9521fb3ced24c2eb39ba89629c7e03a033c465
 |   |   |       f1c801216542c8c4f1e9ba90c5802aa1c09de3
 |   |   |       fff894d0cd29b1d52a7b3ab4f0fbc1f699e015
@@ -1033,6 +1053,7 @@ C:\DEV\BALATRO-WORKSPACE
 |   |   |       fe3757487aa5b1f1716642450f0a8680b7ac0f
 |   |   |       
 |   |   +---ae
+|   |   |       870b878ba26acab9d8d5303b5c969205ecdf31
 |   |   |       8b53e55326d34fda839dc4f90fe3ba0db72817
 |   |   |       bda040fdabbbdca8dd6a5b52caca4473fdc45b
 |   |   |       
@@ -1138,6 +1159,7 @@ C:\DEV\BALATRO-WORKSPACE
 |   |   |       1d06030512af36abc4bafabb81c9d8e11acfdf
 |   |   |       510169956c5bcb7b8e899c326fdf7005dda27f
 |   |   |       6494e58bd71231c537f7df225ebe697f1ec19c
+|   |   |       cb3476a1c510983de60d2ec1b0d3328808216c
 |   |   |       
 |   |   +---cd
 |   |   |       e8af16ba5cc0c8ed54d806b0589227d7d1d145
@@ -1172,6 +1194,7 @@ C:\DEV\BALATRO-WORKSPACE
 |   |   |       
 |   |   +---d7
 |   |   |       11c922325816c0c6f845b37545f4b3c1f0243c
+|   |   |       17d7e6b547715a733cbadd3a3e1a581fa3ed64
 |   |   |       4c1efa7b23df0806bcf8aba097e8208edf3bcb
 |   |   |       50db3611c784e796ae2da26274dc6838a6e2ce
 |   |   |       b3e605bff0ea38d3e4bc204a9e3e89f65046d1
@@ -1261,6 +1284,7 @@ C:\DEV\BALATRO-WORKSPACE
 |   |   |       
 |   |   +---ee
 |   |   |       43a29d6c726d65316926bff3b3c33e92b6a856
+|   |   |       65b3ac0280da05ca0c6d7fc24b55e8b09ab350
 |   |   |       
 |   |   +---ef
 |   |   |       0dbf4baf9986fd889b827f7603cb3e09c6a050
@@ -1268,6 +1292,7 @@ C:\DEV\BALATRO-WORKSPACE
 |   |   |       
 |   |   +---f0
 |   |   |       0bc9aea16f50b157ac1a319e21d894dd8fcbf8
+|   |   |       58fdab3afd72db8317f9490ed79c61d348f57d
 |   |   |       
 |   |   +---f1
 |   |   |       1df8b54b1e5c8d67edfbd09e49fd1e03634536
@@ -1338,6 +1363,7 @@ C:\DEV\BALATRO-WORKSPACE
 |       \---tags
 +---.scripts
 |       exclude_list.txt
+|       manage_saves.bat
 |       set_config.bat
 |       sync.bat
 |       
@@ -1347,18 +1373,1659 @@ C:\DEV\BALATRO-WORKSPACE
 +---.vscode
 |       settings.json
 |       
++---backups
+|   +---balatro_saves
+|   |   |   bmm_compat.cfg
+|   |   |   bmm_storage.db
+|   |   |   bmm_storage.db-shm
+|   |   |   bmm_storage.db-wal
+|   |   |   settings.jkr
+|   |   |   steam_autocloud.vdf
+|   |   |   
+|   |   +---1
+|   |   |       meta.jkr
+|   |   |       profile.jkr
+|   |   |       save.jkr
+|   |   |       
+|   |   +---2
+|   |   |       meta.jkr
+|   |   |       profile.jkr
+|   |   |       
+|   |   +---3
+|   |   |       meta.jkr
+|   |   |       profile.jkr
+|   |   |       
+|   |   +---config
+|   |   |       BrrrDebugBridge.jkr
+|   |   |       BrrrThoseNumbers.jkr
+|   |   |       DebugPlus.jkr
+|   |   |       dpp.jkr
+|   |   |       JokerDisplay.jkr
+|   |   |       Multiplayer.jkr
+|   |   |       Steamodded.jkr
+|   |   |       
+|   |   +---DebugPlusPlus
+|   |   |   +---savestates
+|   |   |   \---settings
+|   |   +---logs
+|   |   |       bmm_2026-01-19_02-34-09.log
+|   |   |       bmm_2026-01-23_16-22-01.log
+|   |   |       bmm_2026-01-23_16-25-14.log
+|   |   |       bmm_2026-01-24_21-27-55.log
+|   |   |       bmm_2026-01-25_20-17-30.log
+|   |   |       bmm_2026-01-25_20-19-14.log
+|   |   |       bmm_2026-01-27_05-27-38.log
+|   |   |       bmm_2026-01-31_00-13-13.log
+|   |   |       bmm_2026-02-02_09-32-05.log
+|   |   |       bmm_2026-02-03_00-33-15.log
+|   |   |       bmm_2026-02-04_00-34-24.log
+|   |   |       
+|   |   +---Mods
+|   |   |   +---BMM-Compat
+|   |   |   |   |   lovely.toml
+|   |   |   |   |   mods_index.txt
+|   |   |   |   |   
+|   |   |   |   +---bmm_compat
+|   |   |   |   |       bootstrap.lua
+|   |   |   |   |       init.lua
+|   |   |   |   |       
+|   |   |   |   \---lovely
+|   |   |   +---BrrrDebugBridge
+|   |   |   |   |   .lovelyignore
+|   |   |   |   |   bridge_logic.lua
+|   |   |   |   |   config.lua
+|   |   |   |   |   smods.json
+|   |   |   |   |   
+|   |   |   |   \---lovely
+|   |   |   |           .lovelyignore
+|   |   |   |           hooks.toml
+|   |   |   |           
+|   |   |   +---BrrrThoseNumbers
+|   |   |   |   |   .lovelyignore
+|   |   |   |   |   brrr_logic.lua
+|   |   |   |   |   config.lua
+|   |   |   |   |   config_ui.lua
+|   |   |   |   |   README.md
+|   |   |   |   |   smods.json
+|   |   |   |   |   
+|   |   |   |   \---localization
+|   |   |   |           .lovelyignore
+|   |   |   |           en-us.lua
+|   |   |   |           
+|   |   |   +---DebugPlus
+|   |   |   |   |   .lovelyignore
+|   |   |   |   |   keys.txt
+|   |   |   |   |   README.MD
+|   |   |   |   |   smods.json
+|   |   |   |   |   
+|   |   |   |   +---assets
+|   |   |   |   |   |   .lovelyignore
+|   |   |   |   |   |   
+|   |   |   |   |   +---1x
+|   |   |   |   |   |       modicon.png
+|   |   |   |   |   |       
+|   |   |   |   |   \---2x
+|   |   |   |   |           modicon.png
+|   |   |   |   |           
+|   |   |   |   +---debugplus
+|   |   |   |   |       .lovelyignore
+|   |   |   |   |       api.lua
+|   |   |   |   |       config.lua
+|   |   |   |   |       console.lua
+|   |   |   |   |       core.lua
+|   |   |   |   |       logger.lua
+|   |   |   |   |       prof.lua
+|   |   |   |   |       smods.lua
+|   |   |   |   |       ui.lua
+|   |   |   |   |       unicode.lua
+|   |   |   |   |       util.lua
+|   |   |   |   |       watcher.lua
+|   |   |   |   |       
+|   |   |   |   +---docs
+|   |   |   |   |       .lovelyignore
+|   |   |   |   |       changelog.md
+|   |   |   |   |       dev.md
+|   |   |   |   |       
+|   |   |   |   \---lovely
+|   |   |   |           .lovelyignore
+|   |   |   |           console.toml
+|   |   |   |           debug-enhancements.toml
+|   |   |   |           misc.toml
+|   |   |   |           modules.toml
+|   |   |   |           
+|   |   |   +---DebugPlusPlus
+|   |   |   |   |   .lovelyignore
+|   |   |   |   |   aux_functions.lua
+|   |   |   |   |   callback_functions.lua
+|   |   |   |   |   config.lua
+|   |   |   |   |   main.lua
+|   |   |   |   |   main_UI.lua
+|   |   |   |   |   overrides.lua
+|   |   |   |   |   README.md
+|   |   |   |   |   smods.json
+|   |   |   |   |   
+|   |   |   |   +---assets
+|   |   |   |   |   |   .lovelyignore
+|   |   |   |   |   |   
+|   |   |   |   |   +---1x
+|   |   |   |   |   |       modicon.png
+|   |   |   |   |   |       
+|   |   |   |   |   +---2x
+|   |   |   |   |   |       modicon.png
+|   |   |   |   |   |       
+|   |   |   |   |   \---other
+|   |   |   |   |           dropdown.png
+|   |   |   |   |           inspector.png
+|   |   |   |   |           screenshot_1.png
+|   |   |   |   |           
+|   |   |   |   +---localization
+|   |   |   |   |       .lovelyignore
+|   |   |   |   |       en-us.lua
+|   |   |   |   |       es_ES.lua
+|   |   |   |   |       
+|   |   |   |   \---lovely
+|   |   |   |           .lovelyignore
+|   |   |   |           game_over.toml
+|   |   |   |           malverk_override.toml
+|   |   |   |           text_input.toml
+|   |   |   |           
+|   |   |   +---Fantom'sPreview
+|   |   |   |   |   .lovelyignore
+|   |   |   |   |   CorePreview.lua
+|   |   |   |   |   EngineSimulate.lua
+|   |   |   |   |   FantomsPreview.json
+|   |   |   |   |   InitPreview.lua
+|   |   |   |   |   InitSimulate.lua
+|   |   |   |   |   InterfacePreview.lua
+|   |   |   |   |   lovely.toml
+|   |   |   |   |   UtilsPreview.lua
+|   |   |   |   |   UtilsSimulate.lua
+|   |   |   |   |   
+|   |   |   |   +---assets
+|   |   |   |   |   |   .lovelyignore
+|   |   |   |   |   |   
+|   |   |   |   |   +---1x
+|   |   |   |   |   |       icon.png
+|   |   |   |   |   |       
+|   |   |   |   |   \---2x
+|   |   |   |   |           icon.png
+|   |   |   |   |           
+|   |   |   |   \---Jokers
+|   |   |   |           .lovelyignore
+|   |   |   |           Multiplayer.lua
+|   |   |   |           _Vanilla.lua
+|   |   |   |           
+|   |   |   +---JokerDisplay
+|   |   |   |   |   .gitignore
+|   |   |   |   |   config.lua
+|   |   |   |   |   icon.png
+|   |   |   |   |   JokerDisplay.json
+|   |   |   |   |   JokerDisplay.lua
+|   |   |   |   |   LICENSE
+|   |   |   |   |   lovely.lua
+|   |   |   |   |   manifest.json
+|   |   |   |   |   README.md
+|   |   |   |   |   
+|   |   |   |   +---assets
+|   |   |   |   |   +---1x
+|   |   |   |   |   |       icon.png
+|   |   |   |   |   |       
+|   |   |   |   |   \---2x
+|   |   |   |   |           icon.png
+|   |   |   |   |           
+|   |   |   |   +---definitions
+|   |   |   |   |       blind_definitions.lua
+|   |   |   |   |       display_definitions.lua
+|   |   |   |   |       edition_definitions.lua
+|   |   |   |   |       global_definitions.lua
+|   |   |   |   |       
+|   |   |   |   +---examples
+|   |   |   |   |       example_1.png
+|   |   |   |   |       example_2.png
+|   |   |   |   |       example_3.png
+|   |   |   |   |       example_4.png
+|   |   |   |   |       
+|   |   |   |   +---localization
+|   |   |   |   |       de.lua
+|   |   |   |   |       default.lua
+|   |   |   |   |       en-us.lua
+|   |   |   |   |       es_419.lua
+|   |   |   |   |       es_ES.lua
+|   |   |   |   |       fr.lua
+|   |   |   |   |       it.lua
+|   |   |   |   |       ja.lua
+|   |   |   |   |       nl.lua
+|   |   |   |   |       pt_BR.lua
+|   |   |   |   |       ru.lua
+|   |   |   |   |       zh_CN.lua
+|   |   |   |   |       zh_TW.lua
+|   |   |   |   |       
+|   |   |   |   +---lovely
+|   |   |   |   |       core.toml
+|   |   |   |   |       
+|   |   |   |   \---src
+|   |   |   |           api_helper_functions.lua
+|   |   |   |           config_tab.lua
+|   |   |   |           controller.lua
+|   |   |   |           display_functions.lua
+|   |   |   |           lsp_def.lua
+|   |   |   |           ui.lua
+|   |   |   |           utils.lua
+|   |   |   |           
+|   |   |   +---lovely
+|   |   |   |   +---dump
+|   |   |   |   |   |   back.lua
+|   |   |   |   |   |   back.lua.json
+|   |   |   |   |   |   blind.lua
+|   |   |   |   |   |   blind.lua.json
+|   |   |   |   |   |   card.lua
+|   |   |   |   |   |   card.lua.json
+|   |   |   |   |   |   cardarea.lua
+|   |   |   |   |   |   cardarea.lua.json
+|   |   |   |   |   |   card_character.lua
+|   |   |   |   |   |   card_character.lua.json
+|   |   |   |   |   |   game.lua
+|   |   |   |   |   |   game.lua.json
+|   |   |   |   |   |   globals.lua
+|   |   |   |   |   |   globals.lua.json
+|   |   |   |   |   |   main.lua
+|   |   |   |   |   |   main.lua.json
+|   |   |   |   |   |   tag.lua
+|   |   |   |   |   |   tag.lua.json
+|   |   |   |   |   |   
+|   |   |   |   |   +---engine
+|   |   |   |   |   |       animatedsprite.lua
+|   |   |   |   |   |       animatedsprite.lua.json
+|   |   |   |   |   |       controller.lua
+|   |   |   |   |   |       controller.lua.json
+|   |   |   |   |   |       event.lua
+|   |   |   |   |   |       event.lua.json
+|   |   |   |   |   |       moveable.lua
+|   |   |   |   |   |       moveable.lua.json
+|   |   |   |   |   |       node.lua
+|   |   |   |   |   |       node.lua.json
+|   |   |   |   |   |       save_manager.lua
+|   |   |   |   |   |       save_manager.lua.json
+|   |   |   |   |   |       sound_manager.lua
+|   |   |   |   |   |       sound_manager.lua.json
+|   |   |   |   |   |       sprite.lua
+|   |   |   |   |   |       sprite.lua.json
+|   |   |   |   |   |       text.lua
+|   |   |   |   |   |       text.lua.json
+|   |   |   |   |   |       ui.lua
+|   |   |   |   |   |       ui.lua.json
+|   |   |   |   |   |       
+|   |   |   |   |   \---functions
+|   |   |   |   |           button_callbacks.lua
+|   |   |   |   |           button_callbacks.lua.json
+|   |   |   |   |           common_events.lua
+|   |   |   |   |           common_events.lua.json
+|   |   |   |   |           misc_functions.lua
+|   |   |   |   |           misc_functions.lua.json
+|   |   |   |   |           state_events.lua
+|   |   |   |   |           state_events.lua.json
+|   |   |   |   |           UI_definitions.lua
+|   |   |   |   |           UI_definitions.lua.json
+|   |   |   |   |           
+|   |   |   |   +---game-dump
+|   |   |   |   |   |   back.lua
+|   |   |   |   |   |   back.lua.json
+|   |   |   |   |   |   blind.lua
+|   |   |   |   |   |   blind.lua.json
+|   |   |   |   |   |   card.lua
+|   |   |   |   |   |   card.lua.json
+|   |   |   |   |   |   cardarea.lua
+|   |   |   |   |   |   cardarea.lua.json
+|   |   |   |   |   |   card_character.lua
+|   |   |   |   |   |   card_character.lua.json
+|   |   |   |   |   |   game.lua
+|   |   |   |   |   |   game.lua.json
+|   |   |   |   |   |   globals.lua
+|   |   |   |   |   |   globals.lua.json
+|   |   |   |   |   |   main.lua
+|   |   |   |   |   |   main.lua.json
+|   |   |   |   |   |   tag.lua
+|   |   |   |   |   |   tag.lua.json
+|   |   |   |   |   |   
+|   |   |   |   |   +---engine
+|   |   |   |   |   |       animatedsprite.lua
+|   |   |   |   |   |       animatedsprite.lua.json
+|   |   |   |   |   |       controller.lua
+|   |   |   |   |   |       controller.lua.json
+|   |   |   |   |   |       event.lua
+|   |   |   |   |   |       event.lua.json
+|   |   |   |   |   |       moveable.lua
+|   |   |   |   |   |       moveable.lua.json
+|   |   |   |   |   |       node.lua
+|   |   |   |   |   |       node.lua.json
+|   |   |   |   |   |       save_manager.lua
+|   |   |   |   |   |       save_manager.lua.json
+|   |   |   |   |   |       sound_manager.lua
+|   |   |   |   |   |       sound_manager.lua.json
+|   |   |   |   |   |       sprite.lua
+|   |   |   |   |   |       sprite.lua.json
+|   |   |   |   |   |       text.lua
+|   |   |   |   |   |       text.lua.json
+|   |   |   |   |   |       ui.lua
+|   |   |   |   |   |       ui.lua.json
+|   |   |   |   |   |       
+|   |   |   |   |   \---functions
+|   |   |   |   |           button_callbacks.lua
+|   |   |   |   |           button_callbacks.lua.json
+|   |   |   |   |           common_events.lua
+|   |   |   |   |           common_events.lua.json
+|   |   |   |   |           misc_functions.lua
+|   |   |   |   |           misc_functions.lua.json
+|   |   |   |   |           state_events.lua
+|   |   |   |   |           state_events.lua.json
+|   |   |   |   |           UI_definitions.lua
+|   |   |   |   |           UI_definitions.lua.json
+|   |   |   |   |           
+|   |   |   |   \---log
+|   |   |   |           lovely-2026.01.12-00.40.51.log
+|   |   |   |           lovely-2026.01.12-00.41.30.log
+|   |   |   |           lovely-2026.01.12-00.41.55.log
+|   |   |   |           lovely-2026.01.12-00.42.45.log
+|   |   |   |           lovely-2026.01.12-00.43.27.log
+|   |   |   |           lovely-2026.01.12-00.43.58.log
+|   |   |   |           lovely-2026.01.12-00.44.56.log
+|   |   |   |           lovely-2026.01.12-00.46.05.log
+|   |   |   |           lovely-2026.01.15-21.38.54.log
+|   |   |   |           lovely-2026.01.16-04.48.02.log
+|   |   |   |           lovely-2026.01.16-04.49.24.log
+|   |   |   |           lovely-2026.01.17-19.56.06.log
+|   |   |   |           lovely-2026.01.18-12.39.14.log
+|   |   |   |           lovely-2026.01.18-15.04.52.log
+|   |   |   |           lovely-2026.01.18-17.09.53.log
+|   |   |   |           lovely-2026.01.18-17.13.27.log
+|   |   |   |           lovely-2026.01.18-19.34.52.log
+|   |   |   |           lovely-2026.01.18-19.36.28.log
+|   |   |   |           lovely-2026.01.18-19.39.25.log
+|   |   |   |           lovely-2026.01.18-19.40.07.log
+|   |   |   |           lovely-2026.01.18-22.03.40.log
+|   |   |   |           lovely-2026.01.19-02.34.20.log
+|   |   |   |           lovely-2026.01.19-06.06.51.log
+|   |   |   |           lovely-2026.01.20-00.25.09.log
+|   |   |   |           lovely-2026.01.20-04.54.51.log
+|   |   |   |           lovely-2026.01.20-13.15.11.log
+|   |   |   |           lovely-2026.01.21-00.28.39.log
+|   |   |   |           lovely-2026.01.21-08.37.10.log
+|   |   |   |           lovely-2026.01.21-17.22.21.log
+|   |   |   |           lovely-2026.01.22-09.01.34.log
+|   |   |   |           lovely-2026.01.23-06.07.57.log
+|   |   |   |           lovely-2026.01.23-06.10.05.log
+|   |   |   |           lovely-2026.01.23-14.33.06.log
+|   |   |   |           lovely-2026.01.23-14.47.20.log
+|   |   |   |           lovely-2026.01.23-14.51.28.log
+|   |   |   |           lovely-2026.01.23-14.54.59.log
+|   |   |   |           lovely-2026.01.23-14.55.31.log
+|   |   |   |           lovely-2026.01.23-15.01.26.log
+|   |   |   |           lovely-2026.01.23-15.04.08.log
+|   |   |   |           lovely-2026.01.23-15.05.51.log
+|   |   |   |           lovely-2026.01.23-15.07.07.log
+|   |   |   |           lovely-2026.01.23-15.09.25.log
+|   |   |   |           lovely-2026.01.23-15.11.34.log
+|   |   |   |           lovely-2026.01.23-15.14.03.log
+|   |   |   |           lovely-2026.01.23-15.14.34.log
+|   |   |   |           lovely-2026.01.23-15.15.15.log
+|   |   |   |           lovely-2026.01.23-15.16.48.log
+|   |   |   |           lovely-2026.01.23-15.19.00.log
+|   |   |   |           lovely-2026.01.23-15.20.12.log
+|   |   |   |           lovely-2026.01.23-15.21.50.log
+|   |   |   |           lovely-2026.01.23-15.22.40.log
+|   |   |   |           lovely-2026.01.23-15.28.27.log
+|   |   |   |           lovely-2026.01.23-15.32.55.log
+|   |   |   |           lovely-2026.01.23-16.10.47.log
+|   |   |   |           lovely-2026.01.23-16.15.49.log
+|   |   |   |           lovely-2026.01.23-16.29.59.log
+|   |   |   |           lovely-2026.01.23-16.30.24.log
+|   |   |   |           lovely-2026.01.23-16.34.36.log
+|   |   |   |           lovely-2026.01.23-16.35.23.log
+|   |   |   |           lovely-2026.01.23-16.40.09.log
+|   |   |   |           lovely-2026.01.23-16.45.57.log
+|   |   |   |           lovely-2026.01.23-16.57.10.log
+|   |   |   |           lovely-2026.01.23-17.01.51.log
+|   |   |   |           lovely-2026.01.23-17.09.35.log
+|   |   |   |           lovely-2026.01.23-17.15.15.log
+|   |   |   |           lovely-2026.01.23-17.24.32.log
+|   |   |   |           lovely-2026.01.23-17.34.12.log
+|   |   |   |           lovely-2026.01.23-17.42.58.log
+|   |   |   |           lovely-2026.01.23-17.54.45.log
+|   |   |   |           lovely-2026.01.23-18.02.29.log
+|   |   |   |           lovely-2026.01.23-18.06.42.log
+|   |   |   |           lovely-2026.01.23-18.21.01.log
+|   |   |   |           lovely-2026.01.23-18.29.26.log
+|   |   |   |           lovely-2026.01.23-18.33.27.log
+|   |   |   |           lovely-2026.01.23-18.39.24.log
+|   |   |   |           lovely-2026.01.23-18.44.44.log
+|   |   |   |           lovely-2026.01.23-18.49.42.log
+|   |   |   |           lovely-2026.01.23-18.54.25.log
+|   |   |   |           lovely-2026.01.23-19.00.09.log
+|   |   |   |           lovely-2026.01.23-19.05.23.log
+|   |   |   |           lovely-2026.01.23-19.11.39.log
+|   |   |   |           lovely-2026.01.23-19.27.53.log
+|   |   |   |           lovely-2026.01.23-19.34.11.log
+|   |   |   |           lovely-2026.01.23-19.42.43.log
+|   |   |   |           lovely-2026.01.23-19.55.55.log
+|   |   |   |           lovely-2026.01.23-20.14.03.log
+|   |   |   |           lovely-2026.01.23-20.19.09.log
+|   |   |   |           lovely-2026.01.23-20.25.47.log
+|   |   |   |           lovely-2026.01.23-20.29.57.log
+|   |   |   |           lovely-2026.01.23-20.33.25.log
+|   |   |   |           lovely-2026.01.23-20.38.30.log
+|   |   |   |           lovely-2026.01.23-20.43.43.log
+|   |   |   |           lovely-2026.01.23-20.51.45.log
+|   |   |   |           lovely-2026.01.23-20.55.32.log
+|   |   |   |           lovely-2026.01.23-20.58.53.log
+|   |   |   |           lovely-2026.01.23-21.01.44.log
+|   |   |   |           lovely-2026.01.23-21.04.32.log
+|   |   |   |           lovely-2026.01.23-21.11.10.log
+|   |   |   |           lovely-2026.01.23-21.14.42.log
+|   |   |   |           lovely-2026.01.23-21.23.03.log
+|   |   |   |           lovely-2026.01.23-21.30.23.log
+|   |   |   |           lovely-2026.01.23-21.34.06.log
+|   |   |   |           lovely-2026.01.23-21.37.19.log
+|   |   |   |           lovely-2026.01.23-21.41.27.log
+|   |   |   |           lovely-2026.01.23-21.54.09.log
+|   |   |   |           lovely-2026.01.23-21.58.11.log
+|   |   |   |           lovely-2026.01.24-01.56.38.log
+|   |   |   |           lovely-2026.01.24-02.06.34.log
+|   |   |   |           lovely-2026.01.24-02.13.11.log
+|   |   |   |           lovely-2026.01.24-02.20.02.log
+|   |   |   |           lovely-2026.01.24-02.25.47.log
+|   |   |   |           lovely-2026.01.24-02.36.13.log
+|   |   |   |           lovely-2026.01.24-02.45.48.log
+|   |   |   |           lovely-2026.01.24-02.49.16.log
+|   |   |   |           lovely-2026.01.24-02.53.35.log
+|   |   |   |           lovely-2026.01.24-11.11.01.log
+|   |   |   |           lovely-2026.01.24-11.16.54.log
+|   |   |   |           lovely-2026.01.24-11.23.16.log
+|   |   |   |           lovely-2026.01.24-11.27.20.log
+|   |   |   |           lovely-2026.01.24-11.31.06.log
+|   |   |   |           lovely-2026.01.24-11.52.49.log
+|   |   |   |           lovely-2026.01.24-12.05.19.log
+|   |   |   |           lovely-2026.01.24-12.36.00.log
+|   |   |   |           lovely-2026.01.24-12.48.40.log
+|   |   |   |           lovely-2026.01.24-12.52.36.log
+|   |   |   |           lovely-2026.01.24-12.56.15.log
+|   |   |   |           lovely-2026.01.24-13.03.28.log
+|   |   |   |           lovely-2026.01.24-13.18.42.log
+|   |   |   |           lovely-2026.01.24-15.57.46.log
+|   |   |   |           lovely-2026.01.24-16.06.27.log
+|   |   |   |           lovely-2026.01.24-16.15.08.log
+|   |   |   |           lovely-2026.01.24-17.00.43.log
+|   |   |   |           lovely-2026.01.24-17.21.44.log
+|   |   |   |           lovely-2026.01.24-17.25.42.log
+|   |   |   |           lovely-2026.01.24-17.30.17.log
+|   |   |   |           lovely-2026.01.24-17.38.57.log
+|   |   |   |           lovely-2026.01.24-17.42.00.log
+|   |   |   |           lovely-2026.01.24-17.44.50.log
+|   |   |   |           lovely-2026.01.24-17.54.32.log
+|   |   |   |           lovely-2026.01.24-17.56.48.log
+|   |   |   |           lovely-2026.01.24-18.05.30.log
+|   |   |   |           lovely-2026.01.24-21.28.50.log
+|   |   |   |           lovely-2026.01.24-21.30.12.log
+|   |   |   |           lovely-2026.01.24-21.30.48.log
+|   |   |   |           lovely-2026.01.25-14.09.23.log
+|   |   |   |           lovely-2026.01.25-14.09.55.log
+|   |   |   |           lovely-2026.01.25-14.12.54.log
+|   |   |   |           lovely-2026.01.25-14.17.47.log
+|   |   |   |           lovely-2026.01.25-14.21.16.log
+|   |   |   |           lovely-2026.01.25-17.27.19.log
+|   |   |   |           lovely-2026.01.25-20.22.44.log
+|   |   |   |           lovely-2026.01.25-20.23.07.log
+|   |   |   |           lovely-2026.01.25-22.30.43.log
+|   |   |   |           lovely-2026.01.25-22.42.31.log
+|   |   |   |           lovely-2026.01.26-03.29.56.log
+|   |   |   |           lovely-2026.01.26-03.33.57.log
+|   |   |   |           lovely-2026.01.26-03.36.52.log
+|   |   |   |           lovely-2026.01.26-03.41.28.log
+|   |   |   |           lovely-2026.01.26-03.42.20.log
+|   |   |   |           lovely-2026.01.26-03.49.38.log
+|   |   |   |           lovely-2026.01.26-03.51.03.log
+|   |   |   |           lovely-2026.01.26-03.57.09.log
+|   |   |   |           lovely-2026.01.26-03.58.18.log
+|   |   |   |           lovely-2026.01.26-04.01.54.log
+|   |   |   |           lovely-2026.01.26-04.04.16.log
+|   |   |   |           lovely-2026.01.26-04.12.33.log
+|   |   |   |           lovely-2026.01.26-04.20.07.log
+|   |   |   |           lovely-2026.01.26-04.22.44.log
+|   |   |   |           lovely-2026.01.26-04.26.08.log
+|   |   |   |           lovely-2026.01.26-04.31.35.log
+|   |   |   |           lovely-2026.01.26-04.32.06.log
+|   |   |   |           lovely-2026.01.26-04.35.34.log
+|   |   |   |           lovely-2026.01.26-20.43.48.log
+|   |   |   |           lovely-2026.01.26-21.38.24.log
+|   |   |   |           lovely-2026.01.26-21.56.44.log
+|   |   |   |           lovely-2026.01.26-22.09.51.log
+|   |   |   |           lovely-2026.01.26-22.52.20.log
+|   |   |   |           lovely-2026.01.26-22.57.35.log
+|   |   |   |           lovely-2026.01.26-23.07.47.log
+|   |   |   |           lovely-2026.01.26-23.22.16.log
+|   |   |   |           lovely-2026.01.26-23.36.14.log
+|   |   |   |           lovely-2026.01.26-23.37.18.log
+|   |   |   |           lovely-2026.01.26-23.37.45.log
+|   |   |   |           lovely-2026.01.26-23.38.06.log
+|   |   |   |           lovely-2026.01.26-23.38.50.log
+|   |   |   |           lovely-2026.01.27-01.04.41.log
+|   |   |   |           lovely-2026.01.27-02.03.07.log
+|   |   |   |           lovely-2026.01.27-02.06.48.log
+|   |   |   |           lovely-2026.01.27-02.07.24.log
+|   |   |   |           lovely-2026.01.27-02.08.00.log
+|   |   |   |           lovely-2026.01.27-02.15.47.log
+|   |   |   |           lovely-2026.01.27-02.27.41.log
+|   |   |   |           lovely-2026.01.27-02.37.47.log
+|   |   |   |           lovely-2026.01.27-02.46.54.log
+|   |   |   |           lovely-2026.01.27-02.49.24.log
+|   |   |   |           lovely-2026.01.27-02.52.30.log
+|   |   |   |           lovely-2026.01.27-02.56.53.log
+|   |   |   |           lovely-2026.01.27-02.59.56.log
+|   |   |   |           lovely-2026.01.27-03.07.35.log
+|   |   |   |           lovely-2026.01.27-03.11.00.log
+|   |   |   |           lovely-2026.01.27-03.26.18.log
+|   |   |   |           lovely-2026.01.27-03.54.11.log
+|   |   |   |           lovely-2026.01.27-04.03.56.log
+|   |   |   |           lovely-2026.01.27-04.15.14.log
+|   |   |   |           lovely-2026.01.27-04.24.54.log
+|   |   |   |           lovely-2026.01.27-04.42.41.log
+|   |   |   |           lovely-2026.01.27-05.08.24.log
+|   |   |   |           lovely-2026.01.27-05.10.34.log
+|   |   |   |           lovely-2026.01.27-05.13.48.log
+|   |   |   |           lovely-2026.01.27-05.28.14.log
+|   |   |   |           lovely-2026.01.27-05.28.48.log
+|   |   |   |           lovely-2026.01.27-05.29.15.log
+|   |   |   |           lovely-2026.01.27-05.52.16.log
+|   |   |   |           lovely-2026.01.27-05.53.24.log
+|   |   |   |           lovely-2026.01.27-05.56.33.log
+|   |   |   |           lovely-2026.01.27-05.57.24.log
+|   |   |   |           lovely-2026.01.27-05.59.22.log
+|   |   |   |           lovely-2026.01.27-06.01.09.log
+|   |   |   |           lovely-2026.01.27-06.15.57.log
+|   |   |   |           lovely-2026.01.27-06.21.08.log
+|   |   |   |           lovely-2026.01.27-06.22.45.log
+|   |   |   |           lovely-2026.01.27-06.25.27.log
+|   |   |   |           lovely-2026.01.27-06.38.28.log
+|   |   |   |           lovely-2026.01.27-06.41.51.log
+|   |   |   |           lovely-2026.01.27-06.45.11.log
+|   |   |   |           lovely-2026.01.27-06.54.23.log
+|   |   |   |           lovely-2026.01.27-06.54.52.log
+|   |   |   |           lovely-2026.01.27-06.58.42.log
+|   |   |   |           lovely-2026.01.27-07.01.40.log
+|   |   |   |           lovely-2026.01.27-07.02.01.log
+|   |   |   |           lovely-2026.01.27-07.07.20.log
+|   |   |   |           lovely-2026.01.27-07.10.49.log
+|   |   |   |           lovely-2026.01.27-07.13.11.log
+|   |   |   |           lovely-2026.01.27-07.20.23.log
+|   |   |   |           lovely-2026.01.27-15.47.11.log
+|   |   |   |           lovely-2026.01.27-16.14.34.log
+|   |   |   |           lovely-2026.01.27-16.15.38.log
+|   |   |   |           lovely-2026.01.27-16.25.55.log
+|   |   |   |           lovely-2026.01.27-16.36.56.log
+|   |   |   |           lovely-2026.01.27-16.39.30.log
+|   |   |   |           lovely-2026.01.27-16.40.06.log
+|   |   |   |           lovely-2026.01.27-16.41.04.log
+|   |   |   |           lovely-2026.01.27-16.41.45.log
+|   |   |   |           lovely-2026.01.27-16.42.24.log
+|   |   |   |           lovely-2026.01.27-16.50.35.log
+|   |   |   |           lovely-2026.01.27-16.54.00.log
+|   |   |   |           lovely-2026.01.27-17.01.34.log
+|   |   |   |           lovely-2026.01.27-17.23.55.log
+|   |   |   |           lovely-2026.01.27-17.29.51.log
+|   |   |   |           lovely-2026.01.27-20.15.25.log
+|   |   |   |           lovely-2026.01.27-20.18.22.log
+|   |   |   |           lovely-2026.01.27-20.18.42.log
+|   |   |   |           lovely-2026.01.27-20.20.31.log
+|   |   |   |           lovely-2026.01.27-20.28.59.log
+|   |   |   |           lovely-2026.01.27-21.08.49.log
+|   |   |   |           lovely-2026.01.27-21.13.51.log
+|   |   |   |           lovely-2026.01.27-22.02.46.log
+|   |   |   |           lovely-2026.01.27-22.03.32.log
+|   |   |   |           lovely-2026.01.27-22.05.56.log
+|   |   |   |           lovely-2026.01.27-23.20.43.log
+|   |   |   |           lovely-2026.01.27-23.21.26.log
+|   |   |   |           lovely-2026.01.27-23.24.07.log
+|   |   |   |           lovely-2026.01.27-23.25.46.log
+|   |   |   |           lovely-2026.01.27-23.27.07.log
+|   |   |   |           lovely-2026.01.27-23.28.42.log
+|   |   |   |           lovely-2026.01.27-23.29.38.log
+|   |   |   |           lovely-2026.01.27-23.45.52.log
+|   |   |   |           lovely-2026.01.28-00.38.25.log
+|   |   |   |           lovely-2026.01.28-00.43.19.log
+|   |   |   |           lovely-2026.01.28-00.46.40.log
+|   |   |   |           lovely-2026.01.28-00.55.15.log
+|   |   |   |           lovely-2026.01.28-00.55.56.log
+|   |   |   |           lovely-2026.01.28-00.56.27.log
+|   |   |   |           lovely-2026.01.28-00.57.06.log
+|   |   |   |           lovely-2026.01.28-01.00.53.log
+|   |   |   |           lovely-2026.01.28-01.01.59.log
+|   |   |   |           lovely-2026.01.28-01.03.31.log
+|   |   |   |           lovely-2026.01.28-01.04.53.log
+|   |   |   |           lovely-2026.01.28-01.05.36.log
+|   |   |   |           lovely-2026.01.28-01.06.57.log
+|   |   |   |           lovely-2026.01.28-01.26.24.log
+|   |   |   |           lovely-2026.01.28-01.27.55.log
+|   |   |   |           lovely-2026.01.28-01.31.53.log
+|   |   |   |           lovely-2026.01.28-01.32.35.log
+|   |   |   |           lovely-2026.01.28-01.35.01.log
+|   |   |   |           lovely-2026.01.28-01.43.04.log
+|   |   |   |           lovely-2026.01.28-01.44.16.log
+|   |   |   |           lovely-2026.01.28-02.38.50.log
+|   |   |   |           lovely-2026.01.28-02.49.40.log
+|   |   |   |           lovely-2026.01.28-02.53.36.log
+|   |   |   |           lovely-2026.01.28-02.58.22.log
+|   |   |   |           lovely-2026.01.28-04.08.53.log
+|   |   |   |           lovely-2026.01.28-04.11.55.log
+|   |   |   |           lovely-2026.01.28-04.14.11.log
+|   |   |   |           lovely-2026.01.28-04.44.18.log
+|   |   |   |           lovely-2026.01.28-04.49.00.log
+|   |   |   |           lovely-2026.01.28-04.49.42.log
+|   |   |   |           lovely-2026.01.28-04.51.53.log
+|   |   |   |           lovely-2026.01.28-04.52.32.log
+|   |   |   |           lovely-2026.01.28-04.57.57.log
+|   |   |   |           lovely-2026.01.28-05.03.07.log
+|   |   |   |           lovely-2026.01.28-05.04.53.log
+|   |   |   |           lovely-2026.01.28-05.09.38.log
+|   |   |   |           lovely-2026.01.28-05.13.42.log
+|   |   |   |           lovely-2026.01.28-05.14.17.log
+|   |   |   |           lovely-2026.01.28-05.18.09.log
+|   |   |   |           lovely-2026.01.28-05.20.38.log
+|   |   |   |           lovely-2026.01.28-05.21.06.log
+|   |   |   |           lovely-2026.01.28-05.25.38.log
+|   |   |   |           lovely-2026.01.28-05.36.36.log
+|   |   |   |           lovely-2026.01.28-05.39.46.log
+|   |   |   |           lovely-2026.01.28-18.48.44.log
+|   |   |   |           lovely-2026.01.28-18.50.36.log
+|   |   |   |           lovely-2026.01.28-21.53.49.log
+|   |   |   |           lovely-2026.01.29-06.28.07.log
+|   |   |   |           lovely-2026.01.29-06.29.23.log
+|   |   |   |           lovely-2026.01.30-02.24.21.log
+|   |   |   |           lovely-2026.01.30-02.32.03.log
+|   |   |   |           lovely-2026.01.30-02.48.03.log
+|   |   |   |           lovely-2026.01.30-02.48.49.log
+|   |   |   |           lovely-2026.01.30-02.49.43.log
+|   |   |   |           lovely-2026.01.30-03.06.28.log
+|   |   |   |           lovely-2026.01.30-03.07.05.log
+|   |   |   |           lovely-2026.01.30-03.12.24.log
+|   |   |   |           lovely-2026.01.30-03.15.29.log
+|   |   |   |           lovely-2026.01.30-03.22.16.log
+|   |   |   |           lovely-2026.01.30-21.36.08.log
+|   |   |   |           lovely-2026.01.30-21.57.50.log
+|   |   |   |           lovely-2026.01.31-00.14.37.log
+|   |   |   |           lovely-2026.01.31-00.15.05.log
+|   |   |   |           lovely-2026.01.31-10.03.31.log
+|   |   |   |           lovely-2026.01.31-10.10.14.log
+|   |   |   |           lovely-2026.01.31-10.13.48.log
+|   |   |   |           lovely-2026.01.31-10.20.30.log
+|   |   |   |           lovely-2026.01.31-20.37.25.log
+|   |   |   |           lovely-2026.01.31-20.38.38.log
+|   |   |   |           lovely-2026.02.01-01.24.59.log
+|   |   |   |           lovely-2026.02.02-09.37.49.log
+|   |   |   |           lovely-2026.02.02-09.39.16.log
+|   |   |   |           lovely-2026.02.02-09.50.11.log
+|   |   |   |           lovely-2026.02.02-10.00.10.log
+|   |   |   |           lovely-2026.02.02-10.05.40.log
+|   |   |   |           lovely-2026.02.03-00.33.35.log
+|   |   |   |           lovely-2026.02.03-00.35.34.log
+|   |   |   |           lovely-2026.02.03-02.15.31.log
+|   |   |   |           lovely-2026.02.04-00.34.59.log
+|   |   |   |           lovely-2026.02.04-00.35.01.log
+|   |   |   |           lovely-2026.02.04-15.07.13.log
+|   |   |   |           
+|   |   |   +---multiplayer-2.20
+|   |   |   |   |   .gitignore
+|   |   |   |   |   .lovelyignore
+|   |   |   |   |   config.lua
+|   |   |   |   |   CONTRIBUTING.md
+|   |   |   |   |   core.lua
+|   |   |   |   |   LICENSE.md
+|   |   |   |   |   Multiplayer.json
+|   |   |   |   |   README.md
+|   |   |   |   |   
+|   |   |   |   +---assets
+|   |   |   |   |   |   .lovelyignore
+|   |   |   |   |   |   
+|   |   |   |   |   +---1x
+|   |   |   |   |   |       blind_col.png
+|   |   |   |   |   |       b_heidelberg.png
+|   |   |   |   |   |       c_asteroid.png
+|   |   |   |   |   |       c_asteroid_ru.png
+|   |   |   |   |   |       decks.png
+|   |   |   |   |   |       deck_stickers.png
+|   |   |   |   |   |       j_baseball_sandbox.png
+|   |   |   |   |   |       j_bloodstone_sandbox.png
+|   |   |   |   |   |       j_castle_sandbox.png
+|   |   |   |   |   |       j_cloud_9_sandbox.png
+|   |   |   |   |   |       j_conjoined_joker.png
+|   |   |   |   |   |       j_constellation_sandbox.png
+|   |   |   |   |   |       j_copycat.png
+|   |   |   |   |   |       j_defensive_joker.png
+|   |   |   |   |   |       j_ERROR_sandbox.png
+|   |   |   |   |   |       j_faceless_sandbox.png
+|   |   |   |   |   |       j_hit_the_road_sandbox.png
+|   |   |   |   |   |       j_idol_sandbox_bw.png
+|   |   |   |   |   |       j_idol_sandbox_color.png
+|   |   |   |   |   |       j_juggler_sandbox.png
+|   |   |   |   |   |       j_lets_go_gambling.png
+|   |   |   |   |   |       j_loyalty_card_sandbox.png
+|   |   |   |   |   |       j_lucky_cat_sandbox.png
+|   |   |   |   |   |       j_magnet.png
+|   |   |   |   |   |       j_mail_sandbox.png
+|   |   |   |   |   |       j_misprint_sandbox.png
+|   |   |   |   |   |       j_order_sandbox.png
+|   |   |   |   |   |       j_pacifist.png
+|   |   |   |   |   |       j_penny_pincher.png
+|   |   |   |   |   |       j_photograph_sandbox.png
+|   |   |   |   |   |       j_pizza.png
+|   |   |   |   |   |       j_ride_the_bus_sandbox.png
+|   |   |   |   |   |       j_runner_sandbox.png
+|   |   |   |   |   |       j_satellite_sandbox.png
+|   |   |   |   |   |       j_skip_off.png
+|   |   |   |   |   |       j_speedrun.png
+|   |   |   |   |   |       j_square_sandbox.png
+|   |   |   |   |   |       j_steel_joker_sandbox.png
+|   |   |   |   |   |       j_taxes.png
+|   |   |   |   |   |       j_throwback_sandbox.png
+|   |   |   |   |   |       j_vampire_sandbox.png
+|   |   |   |   |   |       modicon.png
+|   |   |   |   |   |       player_blind_row.png
+|   |   |   |   |   |       stakes-chips.png
+|   |   |   |   |   |       standard_giga.png
+|   |   |   |   |   |       sticker_balanced.png
+|   |   |   |   |   |       sticker_nemesis.png
+|   |   |   |   |   |       tag_gambling_sandbox.png
+|   |   |   |   |   |       
+|   |   |   |   |   \---2x
+|   |   |   |   |           blind_col.png
+|   |   |   |   |           b_heidelberg.png
+|   |   |   |   |           c_asteroid.png
+|   |   |   |   |           c_asteroid_ru.png
+|   |   |   |   |           decks.png
+|   |   |   |   |           deck_stickers.png
+|   |   |   |   |           j_baseball_sandbox.png
+|   |   |   |   |           j_bloodstone_sandbox.png
+|   |   |   |   |           j_castle_sandbox.png
+|   |   |   |   |           j_cloud_9_sandbox.png
+|   |   |   |   |           j_conjoined_joker.png
+|   |   |   |   |           j_constellation_sandbox.png
+|   |   |   |   |           j_copycat.png
+|   |   |   |   |           j_defensive_joker.png
+|   |   |   |   |           j_ERROR_sandbox.png
+|   |   |   |   |           j_faceless_sandbox.png
+|   |   |   |   |           j_hit_the_road_sandbox.png
+|   |   |   |   |           j_idol_sandbox_bw.png
+|   |   |   |   |           j_idol_sandbox_color.png
+|   |   |   |   |           j_juggler_sandbox.png
+|   |   |   |   |           j_lets_go_gambling.png
+|   |   |   |   |           j_loyalty_card_sandbox.png
+|   |   |   |   |           j_lucky_cat_sandbox.png
+|   |   |   |   |           j_magnet.png
+|   |   |   |   |           j_mail_sandbox.png
+|   |   |   |   |           j_misprint_sandbox.png
+|   |   |   |   |           j_order_sandbox.png
+|   |   |   |   |           j_pacifist.png
+|   |   |   |   |           j_penny_pincher.png
+|   |   |   |   |           j_photograph_sandbox.png
+|   |   |   |   |           j_pizza.png
+|   |   |   |   |           j_ride_the_bus_sandbox.png
+|   |   |   |   |           j_runner_sandbox.png
+|   |   |   |   |           j_satellite_sandbox.png
+|   |   |   |   |           j_skip_off.png
+|   |   |   |   |           j_speedrun.png
+|   |   |   |   |           j_square_sandbox.png
+|   |   |   |   |           j_steel_joker_sandbox.png
+|   |   |   |   |           j_taxes.png
+|   |   |   |   |           j_throwback_sandbox.png
+|   |   |   |   |           j_vampire_sandbox.png
+|   |   |   |   |           modicon.png
+|   |   |   |   |           player_blind_row.png
+|   |   |   |   |           stakes-chips.png
+|   |   |   |   |           standard_giga.png
+|   |   |   |   |           sticker_balanced.png
+|   |   |   |   |           sticker_nemesis.png
+|   |   |   |   |           tag_gambling_sandbox.png
+|   |   |   |   |           
+|   |   |   |   +---compatibility
+|   |   |   |   |   |   .lovelyignore
+|   |   |   |   |   |   AntePreview.lua
+|   |   |   |   |   |   CodexArcanum.lua
+|   |   |   |   |   |   Cryptid.lua
+|   |   |   |   |   |   Distro.lua
+|   |   |   |   |   |   ExtraCredit.lua
+|   |   |   |   |   |   Handy.lua
+|   |   |   |   |   |   HotPotato.lua
+|   |   |   |   |   |   Jen.lua
+|   |   |   |   |   |   JokerDisplay.lua
+|   |   |   |   |   |   Ortalab.lua
+|   |   |   |   |   |   Pokermon.lua
+|   |   |   |   |   |   StrangePencil.lua
+|   |   |   |   |   |   Talisman.lua
+|   |   |   |   |   |   TheOrder.lua
+|   |   |   |   |   |   TooManyJokers.lua
+|   |   |   |   |   |   UpgradeMod.lua
+|   |   |   |   |   |   _compatibility.lua
+|   |   |   |   |   |   
+|   |   |   |   |   \---Preview
+|   |   |   |   |       |   CorePreview.lua
+|   |   |   |   |       |   EngineSimulate.lua
+|   |   |   |   |       |   InitPreview.lua
+|   |   |   |   |       |   InitSimulate.lua
+|   |   |   |   |       |   InterfacePreview.lua
+|   |   |   |   |       |   UtilsPreview.lua
+|   |   |   |   |       |   UtilsSimulate.lua
+|   |   |   |   |       |   
+|   |   |   |   |       \---Jokers
+|   |   |   |   |               Multiplayer.lua
+|   |   |   |   |               _Vanilla.lua
+|   |   |   |   |               
+|   |   |   |   +---gamemodes
+|   |   |   |   |       .lovelyignore
+|   |   |   |   |       attrition.lua
+|   |   |   |   |       showdown.lua
+|   |   |   |   |       survival.lua
+|   |   |   |   |       _gamemodes.lua
+|   |   |   |   |       
+|   |   |   |   +---localization
+|   |   |   |   |       .lovelyignore
+|   |   |   |   |       de.lua
+|   |   |   |   |       en-us.lua
+|   |   |   |   |       es_419.lua
+|   |   |   |   |       es_ES.lua
+|   |   |   |   |       fr.lua
+|   |   |   |   |       it.lua
+|   |   |   |   |       ja.lua
+|   |   |   |   |       mi.lua
+|   |   |   |   |       nl.lua
+|   |   |   |   |       pl.lua
+|   |   |   |   |       pt_BR.lua
+|   |   |   |   |       ru.lua
+|   |   |   |   |       vi.lua
+|   |   |   |   |       zh_CN.lua
+|   |   |   |   |       zh_TW.lua
+|   |   |   |   |       
+|   |   |   |   +---lovely
+|   |   |   |   |       .lovelyignore
+|   |   |   |   |       cards.toml
+|   |   |   |   |       ce.toml
+|   |   |   |   |       challenges.toml
+|   |   |   |   |       compatibility.toml
+|   |   |   |   |       decks.toml
+|   |   |   |   |       deck_select.toml
+|   |   |   |   |       double_emplace.toml
+|   |   |   |   |       end_round.toml
+|   |   |   |   |       game.toml
+|   |   |   |   |       hud.toml
+|   |   |   |   |       judgement.disabled
+|   |   |   |   |       misc.toml
+|   |   |   |   |       pause.toml
+|   |   |   |   |       preview.toml
+|   |   |   |   |       shared_area.toml
+|   |   |   |   |       TheOrder.toml
+|   |   |   |   |       view_deck.toml
+|   |   |   |   |       
+|   |   |   |   +---misc
+|   |   |   |   |       .lovelyignore
+|   |   |   |   |       disable_restart.lua
+|   |   |   |   |       hide_content.lua
+|   |   |   |   |       insane_int.lua
+|   |   |   |   |       mod_hash.lua
+|   |   |   |   |       utils.lua
+|   |   |   |   |       
+|   |   |   |   +---networking
+|   |   |   |   |       .lovelyignore
+|   |   |   |   |       action_handlers.lua
+|   |   |   |   |       socket.lua
+|   |   |   |   |       
+|   |   |   |   +---objects
+|   |   |   |   |   |   .lovelyignore
+|   |   |   |   |   |   
+|   |   |   |   |   +---blinds
+|   |   |   |   |   |       nemesis.lua
+|   |   |   |   |   |       
+|   |   |   |   |   +---boosters
+|   |   |   |   |   |       standard_giga.lua
+|   |   |   |   |   |       
+|   |   |   |   |   +---challenges
+|   |   |   |   |   |       balancing_act.lua
+|   |   |   |   |   |       chore_list.lua
+|   |   |   |   |   |       divination.lua
+|   |   |   |   |   |       high_hand.lua
+|   |   |   |   |   |       in_the_red.lua
+|   |   |   |   |   |       legendaries.lua
+|   |   |   |   |   |       lets_go_gambling.lua
+|   |   |   |   |   |       misprint_deck.lua
+|   |   |   |   |   |       oops_all_jokers.lua
+|   |   |   |   |   |       polymorph_spam.lua
+|   |   |   |   |   |       psychosis.lua
+|   |   |   |   |   |       salvaged_sibyl.lua
+|   |   |   |   |   |       scratch.lua
+|   |   |   |   |   |       skip_off.lua
+|   |   |   |   |   |       speed.lua
+|   |   |   |   |   |       twin_towers.lua
+|   |   |   |   |   |       
+|   |   |   |   |   +---consumables
+|   |   |   |   |   |   |   asteroid.lua
+|   |   |   |   |   |   |   judgement.lua
+|   |   |   |   |   |   |   
+|   |   |   |   |   |   \---sandbox
+|   |   |   |   |   |           ectoplasm.lua
+|   |   |   |   |   |           ouija.lua
+|   |   |   |   |   |           
+|   |   |   |   |   +---decks
+|   |   |   |   |   |       00_violet.lua
+|   |   |   |   |   |       01_indigo.lua
+|   |   |   |   |   |       02_orange.lua
+|   |   |   |   |   |       09_white.lua
+|   |   |   |   |   |       AA_oracle.lua
+|   |   |   |   |   |       BB_gradient.lua
+|   |   |   |   |   |       CC_heidelberg.lua
+|   |   |   |   |   |       ZZ_cocktail.lua
+|   |   |   |   |   |       _decks.lua
+|   |   |   |   |   |       
+|   |   |   |   |   +---editions
+|   |   |   |   |   |       phantom.lua
+|   |   |   |   |   |       
+|   |   |   |   |   +---enhancements
+|   |   |   |   |   |       mp_glass.lua
+|   |   |   |   |   |       
+|   |   |   |   |   +---jokers
+|   |   |   |   |   |   |   bloodstone.lua
+|   |   |   |   |   |   |   conjoined_joker.lua
+|   |   |   |   |   |   |   defensive_joker.lua
+|   |   |   |   |   |   |   hanging_chad.lua
+|   |   |   |   |   |   |   lets_go_gambling.lua
+|   |   |   |   |   |   |   pacifist.lua
+|   |   |   |   |   |   |   penny_pincher.lua
+|   |   |   |   |   |   |   pizza.lua
+|   |   |   |   |   |   |   skip_off.lua
+|   |   |   |   |   |   |   speedrun.lua
+|   |   |   |   |   |   |   taxes.lua
+|   |   |   |   |   |   |   
+|   |   |   |   |   |   \---sandbox
+|   |   |   |   |   |           baseball.lua
+|   |   |   |   |   |           bloodstone.lua
+|   |   |   |   |   |           castle.lua
+|   |   |   |   |   |           cloud_9.lua
+|   |   |   |   |   |           constellation.lua
+|   |   |   |   |   |           error.lua
+|   |   |   |   |   |           faceless.lua
+|   |   |   |   |   |           hit_the_road.lua
+|   |   |   |   |   |           idol.lua
+|   |   |   |   |   |           juggler.lua
+|   |   |   |   |   |           loyalty_card.lua
+|   |   |   |   |   |           lucky_cat.lua
+|   |   |   |   |   |           magnet_sandbox.lua
+|   |   |   |   |   |           mail.lua
+|   |   |   |   |   |           misprint.lua
+|   |   |   |   |   |           order.lua
+|   |   |   |   |   |           photograph.lua
+|   |   |   |   |   |           ride_the_bus.lua
+|   |   |   |   |   |           runner.lua
+|   |   |   |   |   |           satellite.lua
+|   |   |   |   |   |           square.lua
+|   |   |   |   |   |           steel_joker.lua
+|   |   |   |   |   |           throwback.lua
+|   |   |   |   |   |           vampire.lua
+|   |   |   |   |   |           
+|   |   |   |   |   +---stakes
+|   |   |   |   |   |       atlas.lua
+|   |   |   |   |   |       planet.lua
+|   |   |   |   |   |       spectral.lua
+|   |   |   |   |   |       spectralplus.lua
+|   |   |   |   |   |       
+|   |   |   |   |   +---stickers
+|   |   |   |   |   |       balanced.lua
+|   |   |   |   |   |       nemesis.lua
+|   |   |   |   |   |       
+|   |   |   |   |   \---tags
+|   |   |   |   |           gambling_sandbox.lua
+|   |   |   |   |           investment_sandbox.lua
+|   |   |   |   |           juggle_sandbox.lua
+|   |   |   |   |           
+|   |   |   |   +---rulesets
+|   |   |   |   |       .lovelyignore
+|   |   |   |   |       badlatro.lua
+|   |   |   |   |       blitz.lua
+|   |   |   |   |       majorleague.lua
+|   |   |   |   |       minorleague.lua
+|   |   |   |   |       ranked.lua
+|   |   |   |   |       sandbox.lua
+|   |   |   |   |       smallworld.lua
+|   |   |   |   |       traditional.lua
+|   |   |   |   |       vanilla.lua
+|   |   |   |   |       _rulesets.lua
+|   |   |   |   |       
+|   |   |   |   \---ui
+|   |   |   |       |   .lovelyignore
+|   |   |   |       |   game.lua
+|   |   |   |       |   hud.lua
+|   |   |   |       |   lobby.lua
+|   |   |   |       |   main_menu.lua
+|   |   |   |       |   smods.lua
+|   |   |   |       |   
+|   |   |   |       \---components
+|   |   |   |               background_grouping.lua
+|   |   |   |               blind_chip.lua
+|   |   |   |               disableable_button.lua
+|   |   |   |               disableable_option_cycle.lua
+|   |   |   |               disableable_toggle.lua
+|   |   |   |               lobby_advanced_tab.lua
+|   |   |   |               lobby_code_buttons.lua
+|   |   |   |               lobby_deck_button.lua
+|   |   |   |               lobby_gameplay_tab.lua
+|   |   |   |               lobby_main_button.lua
+|   |   |   |               lobby_modifiers_tab.lua
+|   |   |   |               lobby_options_tab.lua
+|   |   |   |               lobby_status_display.lua
+|   |   |   |               main_lobby_options.lua
+|   |   |   |               players_section.lua
+|   |   |   |               ruleset_info_menu.lua
+|   |   |   |               utils.lua
+|   |   |   |               
+|   |   |   \---Steamodded
+|   |   |       |   .gitattributes
+|   |   |       |   .gitignore
+|   |   |       |   config.lua
+|   |   |       |   icon.png
+|   |   |       |   LICENSE
+|   |   |       |   manifest.json
+|   |   |       |   README.md
+|   |   |       |   release.lua
+|   |   |       |   tk_debug_window.py
+|   |   |       |   version.lua
+|   |   |       |   
+|   |   |       +---.github
+|   |   |       |       .keep
+|   |   |       |       CODEOWNERS
+|   |   |       |       pull_request_template.md
+|   |   |       |       
+|   |   |       +---assets
+|   |   |       |   |   cat.png
+|   |   |       |   |   
+|   |   |       |   +---1x
+|   |   |       |   |       default_achievements.png
+|   |   |       |   |       mod_tags.png
+|   |   |       |   |       
+|   |   |       |   +---2x
+|   |   |       |   |       default_achievements.png
+|   |   |       |   |       mod_tags.png
+|   |   |       |   |       
+|   |   |       |   \---sounds
+|   |   |       |           xchips.ogg
+|   |   |       |           
+|   |   |       +---libs
+|   |   |       |   +---https
+|   |   |       |   |       luajit-curl.lua
+|   |   |       |   |       smods-https.lua
+|   |   |       |   |       
+|   |   |       |   +---json
+|   |   |       |   |       init.lua
+|   |   |       |   |       json.lua
+|   |   |       |   |       
+|   |   |       |   \---nativefs
+|   |   |       |           icon.png
+|   |   |       |           init.lua
+|   |   |       |           LICENSE
+|   |   |       |           manifest.json
+|   |   |       |           nativefs.lua
+|   |   |       |           README.md
+|   |   |       |           
+|   |   |       +---localization
+|   |   |       |       en-us.lua
+|   |   |       |       es_419.lua
+|   |   |       |       es_ES.lua
+|   |   |       |       fr.lua
+|   |   |       |       it.lua
+|   |   |       |       ko.lua
+|   |   |       |       pt_BR.lua
+|   |   |       |       ru.lua
+|   |   |       |       zh_CN.lua
+|   |   |       |       
+|   |   |       +---lovely
+|   |   |       |       achievements.toml
+|   |   |       |       atlas.toml
+|   |   |       |       back.toml
+|   |   |       |       better_calc.toml
+|   |   |       |       better_calc_fixes.toml
+|   |   |       |       blind.toml
+|   |   |       |       blind_ui.toml
+|   |   |       |       booster.toml
+|   |   |       |       calculate_card_added.toml
+|   |   |       |       calc_returns.toml
+|   |   |       |       can_calculate.toml
+|   |   |       |       cardarea.toml
+|   |   |       |       cardareas.toml
+|   |   |       |       card_limit.toml
+|   |   |       |       center.toml
+|   |   |       |       challenge.toml
+|   |   |       |       compact_cashout.toml
+|   |   |       |       compat_0_9_8.toml
+|   |   |       |       core.toml
+|   |   |       |       crash_handler.toml
+|   |   |       |       create_sprite.toml
+|   |   |       |       deck_skins.toml
+|   |   |       |       dollar_row.toml
+|   |   |       |       easings.toml
+|   |   |       |       edition.toml
+|   |   |       |       enhancement.toml
+|   |   |       |       event.toml
+|   |   |       |       fixes.toml
+|   |   |       |       gradient.toml
+|   |   |       |       hand_limit.toml
+|   |   |       |       jimboquip.toml
+|   |   |       |       joker_retriggers.toml
+|   |   |       |       joker_size.toml
+|   |   |       |       keybind.toml
+|   |   |       |       language.toml
+|   |   |       |       libs.toml
+|   |   |       |       listed_probabilities.toml
+|   |   |       |       loader.toml
+|   |   |       |       menu.toml
+|   |   |       |       mod.toml
+|   |   |       |       multi_box_descriptions.toml
+|   |   |       |       number_formatting.toml
+|   |   |       |       perma_bonus.toml
+|   |   |       |       playing_card.toml
+|   |   |       |       poker_hand.toml
+|   |   |       |       poker_hand_screen.toml
+|   |   |       |       pool.toml
+|   |   |       |       rarity.toml
+|   |   |       |       scaling.toml
+|   |   |       |       scoring_calculation.toml
+|   |   |       |       seal.toml
+|   |   |       |       shaders.toml
+|   |   |       |       shop.toml
+|   |   |       |       sound.toml
+|   |   |       |       stake.toml
+|   |   |       |       sticker.toml
+|   |   |       |       tag.toml
+|   |   |       |       text_effect.toml
+|   |   |       |       threads.toml
+|   |   |       |       ui.toml
+|   |   |       |       ui_additional_text_props.toml
+|   |   |       |       ui_elements.toml
+|   |   |       |       
+|   |   |       +---lsp_def
+|   |   |       |   |   smods_core.lua
+|   |   |       |   |   ui.lua
+|   |   |       |   |   utils.lua
+|   |   |       |   |   vanilla.lua
+|   |   |       |   |   
+|   |   |       |   +---classes
+|   |   |       |   |       achievement.lua
+|   |   |       |   |       atlas.lua
+|   |   |       |   |       back.lua
+|   |   |       |   |       blind.lua
+|   |   |       |   |       booster.lua
+|   |   |       |   |       center.lua
+|   |   |       |   |       challenge.lua
+|   |   |       |   |       consumable.lua
+|   |   |       |   |       consumable_type.lua
+|   |   |       |   |       deck_skin.lua
+|   |   |       |   |       draw_step.lua
+|   |   |       |   |       dynatexteffect.lua
+|   |   |       |   |       edition.lua
+|   |   |       |   |       enhancement.lua
+|   |   |       |   |       font.lua
+|   |   |       |   |       game_object.lua
+|   |   |       |   |       gradient.lua
+|   |   |       |   |       jimbo_quip.lua
+|   |   |       |   |       joker.lua
+|   |   |       |   |       keybind.lua
+|   |   |       |   |       language.lua
+|   |   |       |   |       object_type.lua
+|   |   |       |   |       poker_hand.lua
+|   |   |       |   |       rank.lua
+|   |   |       |   |       rarity.lua
+|   |   |       |   |       scoring_calculation.lua
+|   |   |       |   |       seal.lua
+|   |   |       |   |       shader.lua
+|   |   |       |   |       sound.lua
+|   |   |       |   |       stake.lua
+|   |   |       |   |       sticker.lua
+|   |   |       |   |       suit.lua
+|   |   |       |   |       tag.lua
+|   |   |       |   |       undiscovered_sprite.lua
+|   |   |       |   |       voucher.lua
+|   |   |       |   |       
+|   |   |       |   \---lib
+|   |   |       |           json.lua
+|   |   |       |           lovely.lua
+|   |   |       |           nativefs.lua
+|   |   |       |           smods-https.lua
+|   |   |       |           
+|   |   |       \---src
+|   |   |               card_draw.lua
+|   |   |               compat_0_9_8.lua
+|   |   |               core.lua
+|   |   |               crash_handler.lua
+|   |   |               game_object.lua
+|   |   |               index.lua
+|   |   |               loader.lua
+|   |   |               logging.lua
+|   |   |               overrides.lua
+|   |   |               ui.lua
+|   |   |               utils.lua
+|   |   |               
+|   |   +---ModVersions
+|   |   +---mod_assets
+|   |   |   +---descriptions
+|   |   |   |       !booboobalatro!.md
+|   |   |   |       2-for-1-tarots.md
+|   |   |   |       aikoyori-paint-job.md
+|   |   |   |       amy's-waifu.md
+|   |   |   |       ankh.md
+|   |   |   |       arashicoolstuff.md
+|   |   |   |       azazel's-jokers.md
+|   |   |   |       bad-apple.md
+|   |   |   |       balagay.md
+|   |   |   |       balatringamingdeck.md
+|   |   |   |       balatro-dark-mode.md
+|   |   |   |       balatro-dash.md
+|   |   |   |       balatro-goes-kino!.md
+|   |   |   |       balatro-producciones.md
+|   |   |   |       balatro-tcg.md
+|   |   |   |       baldatro.md
+|   |   |   |       betmma-mods.md
+|   |   |   |       boss-jokers.md
+|   |   |   |       brainstorm-rerolled.md
+|   |   |   |       cardsauce.md
+|   |   |   |       cardsleeves.md
+|   |   |   |       celestial-funk.md
+|   |   |   |       cokelatro.md
+|   |   |   |       collabs-reimagined.md
+|   |   |   |       condensed-ui.md
+|   |   |   |       cryptid-moremariojokers.md
+|   |   |   |       custom-suit-order.md
+|   |   |   |       debugplusplus.md
+|   |   |   |       deckskinslite.md
+|   |   |   |       deluxe-consumables.md
+|   |   |   |       dismissalert.md
+|   |   |   |       easternfarmer's-corner.md
+|   |   |   |       entropy.md
+|   |   |   |       espalatro.md
+|   |   |   |       everything-upgrade-balatro.md
+|   |   |   |       evilatro.md
+|   |   |   |       extracredit.md
+|   |   |   |       familiar.md
+|   |   |   |       fanta-the-clown-jokers.md
+|   |   |   |       fantom's-preview.md
+|   |   |   |       fazbears-video-poker-simulator.md
+|   |   |   |       final-mix.md
+|   |   |   |       finn's-pok-cards.md
+|   |   |   |       finn's-pok-latro.md
+|   |   |   |       fir.md
+|   |   |   |       flush-hotkeys.md
+|   |   |   |       fortlatro.md
+|   |   |   |       furlatro.md
+|   |   |   |       fusion-jokers.md
+|   |   |   |       galdur.md
+|   |   |   |       gambling-is-magic.md
+|   |   |   |       garbshit.md
+|   |   |   |       gemsteel-texture.md
+|   |   |   |       ghost-trick-skin-pack.md
+|   |   |   |       gigajokers.md
+|   |   |   |       glowypumpkin-community-deck.md
+|   |   |   |       go-to-bed,-minty.md
+|   |   |   |       goonlatro.md
+|   |   |   |       grab-bag.md
+|   |   |   |       gracebalatro.md
+|   |   |   |       hd-balatro.md
+|   |   |   |       highest-priestess.md
+|   |   |   |       hit.md
+|   |   |   |       horizon-mod.md
+|   |   |   |       hunatro.md
+|   |   |   |       hyper's-stuff.md
+|   |   |   |       imm.md
+|   |   |   |       ink-and-color-suits.md
+|   |   |   |       insolence.md
+|   |   |   |       israeli-streamer-mod.md
+|   |   |   |       jimbo's-histories.md
+|   |   |   |       jimbotomy.md
+|   |   |   |       joker-loadouts.md
+|   |   |   |       jokerhub.md
+|   |   |   |       joyousspring.md
+|   |   |   |       justice.md
+|   |   |   |       kevin's-uty.md
+|   |   |   |       lgbt-mult-cards.md
+|   |   |   |       lightspeed.md
+|   |   |   |       lobotomy-corporation.md
+|   |   |   |       lucky-jimbos.md
+|   |   |   |       lucky-legends-i.md
+|   |   |   |       lushmod.md
+|   |   |   |       malverk.md
+|   |   |   |       maniatro.md
+|   |   |   |       math-blinds.md
+|   |   |   |       max's-jokers.md
+|   |   |   |       more-fluff.md
+|   |   |   |       morne.md
+|   |   |   |       multi-jokers.md
+|   |   |   |       multi-text-box.md
+|   |   |   |       multiplayer.md
+|   |   |   |       nyankatro-[a-the-battle-cats-mod].md
+|   |   |   |       pampa-joker-pack.md
+|   |   |   |       paperback.md
+|   |   |   |       peakshitmod.md
+|   |   |   |       plantain.md
+|   |   |   |       pokerleven.md
+|   |   |   |       poopoofart.md
+|   |   |   |       project-moon-texture-pack.md
+|   |   |   |       punchline.md
+|   |   |   |       qol-bundle.md
+|   |   |   |       qualatro.md
+|   |   |   |       quilombo.md
+|   |   |   |       rain-world-karma-deck.md
+|   |   |   |       readabletarots.md
+|   |   |   |       reddit-bonanza.md
+|   |   |   |       regretevator-modpack.md
+|   |   |   |       reverse-tarot-+-hijinks.md
+|   |   |   |       revo's-vault.md
+|   |   |   |       riff-raffling.md
+|   |   |   |       rofflatro.md
+|   |   |   |       runelatro.md
+|   |   |   |       sagatro.md
+|   |   |   |       saturn.md
+|   |   |   |       saukhonghudecks.md
+|   |   |   |       save-rewinder.md
+|   |   |   |       shimmerberry.md
+|   |   |   |       sholatro.md
+|   |   |   |       sholium.md
+|   |   |   |       slay-the-spire-jokers.md
+|   |   |   |       smokey.md
+|   |   |   |       snows-mods.md
+|   |   |   |       solar.md
+|   |   |   |       soultarots.md
+|   |   |   |       sparklatro.md
+|   |   |   |       steamodded.md
+|   |   |   |       strange-library.md
+|   |   |   |       strange-pencil.md
+|   |   |   |       symmetricspiral's-pokemon-skins.md
+|   |   |   |       systemclock.md
+|   |   |   |       tagmanager.md
+|   |   |   |       tangents.md
+|   |   |   |       telepurte-cards.md
+|   |   |   |       teocean.md
+|   |   |   |       terrariaxbalatro.md
+|   |   |   |       the-book-of-thoth-tarot.md
+|   |   |   |       the-calamity-crew-deck.md
+|   |   |   |       the-dragon-quest-deck.md
+|   |   |   |       themed-jokers-retriggered.md
+|   |   |   |       toga's-stuff.md
+|   |   |   |       toki-pona.md
+|   |   |   |       too-many-decks.md
+|   |   |   |       too-many-jokers.md
+|   |   |   |       totally-balanced.md
+|   |   |   |       trance.md
+|   |   |   |       turbulent-jokers.md
+|   |   |   |       turtleschallenges.md
+|   |   |   |       unblind.md
+|   |   |   |       vietnamese-balatro.md
+|   |   |   |       wokelatro.md
+|   |   |   |       yahimod.md
+|   |   |   |       yippie.md
+|   |   |   |       
+|   |   |   \---thumbnails
+|   |   |           !booboobalatro!.jpg
+|   |   |           2-for-1-tarots.jpg
+|   |   |           absent-dealer.jpg
+|   |   |           agarmons-a-pokermon-addon.jpg
+|   |   |           aikoyori's-shenanigans.jpg
+|   |   |           aikoyori-paint-job.jpg
+|   |   |           all-in-jest.jpg
+|   |   |           amy's-waifu.jpg
+|   |   |           ankh.jpg
+|   |   |           another-stupid-balatro-mod.jpg
+|   |   |           arashicoolstuff.jpg
+|   |   |           azazel's-jokers.jpg
+|   |   |           balajeweled.jpg
+|   |   |           balaquints.jpg
+|   |   |           balatringamingdeck.jpg
+|   |   |           balatro-community-college.jpg
+|   |   |           balatro-dark-mode.jpg
+|   |   |           balatro-draft.jpg
+|   |   |           balatro-gardens.jpg
+|   |   |           balatro-goes-kino!.jpg
+|   |   |           balatro-producciones.jpg
+|   |   |           balatroaudiohotswitch.jpg
+|   |   |           baldatro.jpg
+|   |   |           beelatro.jpg
+|   |   |           betmma-mods.jpg
+|   |   |           binding-of-isaac-tarot.jpg
+|   |   |           bloonlatro.jpg
+|   |   |           blueprint.jpg
+|   |   |           boss-jokers.jpg
+|   |   |           brainstorm-rerolled.jpg
+|   |   |           buffoonery.jpg
+|   |   |           bunco.jpg
+|   |   |           cardsauce.jpg
+|   |   |           cardsleeves.jpg
+|   |   |           cartomancer.jpg
+|   |   |           casey.jpg
+|   |   |           celestial-funk.jpg
+|   |   |           cokelatro.jpg
+|   |   |           collabs-reimagined.jpg
+|   |   |           colorblind-seals.jpg
+|   |   |           colored-suit-tarots.jpg
+|   |   |           colorsplashed.jpg
+|   |   |           condensed-ui.jpg
+|   |   |           cryptid-moremariojokers.jpg
+|   |   |           cryptid.jpg
+|   |   |           cryptposting.jpg
+|   |   |           curilatro.jpg
+|   |   |           custom-suit-order.jpg
+|   |   |           deck-creator.jpg
+|   |   |           dismissalert.jpg
+|   |   |           dumbtro.jpg
+|   |   |           easternfarmer's-corner.jpg
+|   |   |           entropy.jpg
+|   |   |           epic-jokers.jpg
+|   |   |           espalatro.jpg
+|   |   |           everything-upgrade-balatro.jpg
+|   |   |           evilatro.jpg
+|   |   |           extracredit.jpg
+|   |   |           familiar.jpg
+|   |   |           fanta-the-clown-jokers.jpg
+|   |   |           fazbears-video-poker-simulator.jpg
+|   |   |           fickle-fox.jpg
+|   |   |           final-mix.jpg
+|   |   |           finn's-pok-cards.jpg
+|   |   |           finn's-pok-latro.jpg
+|   |   |           fir.jpg
+|   |   |           firebotmodlist.jpg
+|   |   |           flower-pot.jpg
+|   |   |           flushtro.jpg
+|   |   |           fortlatro.jpg
+|   |   |           furlatro.jpg
+|   |   |           galdur.jpg
+|   |   |           gambling-is-magic.jpg
+|   |   |           garbshit.jpg
+|   |   |           gem-pokermon.jpg
+|   |   |           gemsteel-texture.jpg
+|   |   |           gemstones.jpg
+|   |   |           genshin-hsr-jokers.jpg
+|   |   |           ghost-trick-skin-pack.jpg
+|   |   |           gigajokers.jpg
+|   |   |           glorplatro.jpg
+|   |   |           glowypumpkin-community-deck.jpg
+|   |   |           glumbus.jpg
+|   |   |           go-fish.jpg
+|   |   |           goonlatro.jpg
+|   |   |           grab-bag.jpg
+|   |   |           gracebalatro.jpg
+|   |   |           greener-jokers.jpg
+|   |   |           handsomedevils.jpg
+|   |   |           handybalatro.jpg
+|   |   |           highest-priestess.jpg
+|   |   |           hit.jpg
+|   |   |           hot-potato.jpg
+|   |   |           hunatro.jpg
+|   |   |           hyper's-stuff.jpg
+|   |   |           imm.jpg
+|   |   |           ink-and-color-suits.jpg
+|   |   |           jambatro.jpg
+|   |   |           jimbo's-histories.jpg
+|   |   |           jimbo's-metrics.jpg
+|   |   |           joker-loadouts.jpg
+|   |   |           joker-miku-over-jimbo.jpg
+|   |   |           jokerdisplay.jpg
+|   |   |           jokerhub.jpg
+|   |   |           joyousspring.jpg
+|   |   |           justice.jpg
+|   |   |           kcvanilla.jpg
+|   |   |           kevin's-uty.jpg
+|   |   |           kyu-latro!.jpg
+|   |   |           lgbt-mult-cards.jpg
+|   |   |           lobotomy-corporation.jpg
+|   |   |           locfixer.jpg
+|   |   |           lost-edition.jpg
+|   |   |           lucky-jimbos.jpg
+|   |   |           lucky-legends-i.jpg
+|   |   |           lucky-rabbit.jpg
+|   |   |           lucky-seven.jpg
+|   |   |           magicsort.jpg
+|   |   |           main-menu-tweaks.jpg
+|   |   |           malverk.jpg
+|   |   |           maniatro.jpg
+|   |   |           marco.jpg
+|   |   |           max's-jokers.jpg
+|   |   |           maximus.jpg
+|   |   |           minecraft-title-text.jpg
+|   |   |           minty's-silly-little-mod.jpg
+|   |   |           mod-of-theseus.jpg
+|   |   |           more-fluff.jpg
+|   |   |           morne.jpg
+|   |   |           multi-text-box.jpg
+|   |   |           multiplayer.jpg
+|   |   |           nacho's-pokermon-dip.jpg
+|   |   |           neatojokers.jpg
+|   |   |           next-ante-preview.jpg
+|   |   |           nyankatro-[a-the-battle-cats-mod].jpg
+|   |   |           ortalab.jpg
+|   |   |           paperback.jpg
+|   |   |           partner.jpg
+|   |   |           peakshitmod.jpg
+|   |   |           phanta.jpg
+|   |   |           pixelperfect.jpg
+|   |   |           pi_cubed's-jokers.jpg
+|   |   |           planet-nine.jpg
+|   |   |           plantain.jpg
+|   |   |           pokerleven.jpg
+|   |   |           pokermon-maelmc.jpg
+|   |   |           pokermon.jpg
+|   |   |           pokermonplus.jpg
+|   |   |           poopoofart.jpg
+|   |   |           prism.jpg
+|   |   |           project-moon-texture-pack.jpg
+|   |   |           punchline.jpg
+|   |   |           qualatro.jpg
+|   |   |           quilombo.jpg
+|   |   |           rain-world-karma-deck.jpg
+|   |   |           readabletarots.jpg
+|   |   |           reddit-bonanza.jpg
+|   |   |           reduceddecks.jpg
+|   |   |           redux-arcanum.jpg
+|   |   |           regretevator-modpack.jpg
+|   |   |           requiem.jpg
+|   |   |           revo's-vault.jpg
+|   |   |           riff-raffling.jpg
+|   |   |           rofflatro.jpg
+|   |   |           rose's-dumbass-balatro-mod.jpg
+|   |   |           runelatro.jpg
+|   |   |           sagatro.jpg
+|   |   |           saturn.jpg
+|   |   |           saukhonghudecks.jpg
+|   |   |           save-rewinder.jpg
+|   |   |           sculio.jpg
+|   |   |           sebalatro.jpg
+|   |   |           sharp-cards.jpg
+|   |   |           shenanigans's-decks.jpg
+|   |   |           shimmerberry.jpg
+|   |   |           sholium.jpg
+|   |   |           showdown.jpg
+|   |   |           six-suits.jpg
+|   |   |           slay-the-jokers.jpg
+|   |   |           slay-the-spire-jokers.jpg
+|   |   |           snows-mods.jpg
+|   |   |           soultarots.jpg
+|   |   |           soup.jpg
+|   |   |           sparklatro.jpg
+|   |   |           spectrum-framework.jpg
+|   |   |           sticky-fingers.jpg
+|   |   |           strange-pencil.jpg
+|   |   |           superfine!!.jpg
+|   |   |           symmetricspiral's-pokemon-skins.jpg
+|   |   |           systemclock.jpg
+|   |   |           tagmanager.jpg
+|   |   |           tangents.jpg
+|   |   |           telepurte-cards.jpg
+|   |   |           the-book-of-thoth-tarot.jpg
+|   |   |           the-calamity-crew-deck.jpg
+|   |   |           the-dragon-quest-deck.jpg
+|   |   |           the-library.jpg
+|   |   |           the-toxic-stall-a-pokermon-addon.jpg
+|   |   |           themed-jokers-retriggered.jpg
+|   |   |           tiendita's.jpg
+|   |   |           toga's-stuff.jpg
+|   |   |           toki-pona.jpg
+|   |   |           too-many-decks.jpg
+|   |   |           totally-balanced.jpg
+|   |   |           troubadour.jpg
+|   |   |           typ0's-random-jokers.jpg
+|   |   |           typist.jpg
+|   |   |           unblind.jpg
+|   |   |           vallkarri.jpg
+|   |   |           vanilla+-decks.jpg
+|   |   |           vietnamese-balatro.jpg
+|   |   |           visibility.jpg
+|   |   |           vocalatro.jpg
+|   |   |           vortex.jpg
+|   |   |           waifu-jokers.jpg
+|   |   |           wilder.jpg
+|   |   |           yahimod.jpg
+|   |   |           yippie.jpg
+|   |   |           zokersmodmenu.jpg
+|   |   |           
+|   |   \---mod_index_cache
+|   |           bmi_mods_cache_downloads_desc.json
+|   |           bmi_mods_cache_name_asc.json
+|   |           
+|   \---vault_p2
+|       +---backup_20260205_131610
+|       |       meta.jkr
+|       |       profile.jkr
+|       |       
+|       +---backup_20260205_131842
+|       |       meta.jkr
+|       |       profile.jkr
+|       |       
+|       +---backup_20260205_131959
+|       |       meta.jkr
+|       |       profile.jkr
+|       |       
+|       +---backup_20260205_133154
+|       |       meta.jkr
+|       |       profile.jkr
+|       |       
+|       \---backup_20260205_133954
+|               meta.jkr
+|               profile.jkr
+|               
 +---BrrrDebugBridge
 |       bridge_logic.lua
 |       config.lua
 |       smods.json
 |       
-\---BrrrThoseNumbers
-    |   brrr_logic.lua
-    |   config.lua
-    |   config_ui.lua
-    |   README.md
-    |   smods.json
-    |   
-    \---localization
-            en-us.lua
++---BrrrThoseNumbers
+|   |   brrr_logic.lua
+|   |   config.lua
+|   |   config_ui.lua
+|   |   README.md
+|   |   smods.json
+|   |   
+|   \---localization
+|           en-us.lua
+|           
+\---test_saves
+    \---active
+            meta.jkr
+            profile.jkr
             

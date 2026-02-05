@@ -15,3 +15,6 @@ BrrrDebugBridge/config.lua
 
 # Local Dumps and Analysis
 .dump/
+
+#backups
+backups

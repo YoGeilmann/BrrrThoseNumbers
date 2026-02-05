@@ -1,5 +1,5 @@
 return {
     show_intro = false,
-    mode = "auto",
+    mode = "manual",
     deck = "b_red"
 }

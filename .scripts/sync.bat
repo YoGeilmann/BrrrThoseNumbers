@@ -23,21 +23,22 @@ if not exist "%LUA_VALIDATOR%" (
     pause & exit /b
 )
 
-:: --- 3. VALIDATION (SKIP BACKUPS) ---
-echo [SYNC] Validating mod files (excluding backups)...
+:: --- 3. VALIDATION (STRICT & CLEAN) ---
+echo [SYNC] Validating mod files...
 set "VALIDATION_FAILED=0"
 
-:: Scan all .lua files but filter out the 'backups' directory for performance
 for /r "%REPO_ROOT%" %%f in (*.lua) do (
-    echo %%f | findstr /i "backups" >nul
+    set "FILE_PATH=%%f"
+    :: Check if path contains 'backups'
+    echo !FILE_PATH! | findstr /i "backups" >nul
     if errorlevel 1 (
         if exist "%%f" (
             "%LUA_VALIDATOR%" -p "%%f" >nul 2>&1
             if !errorlevel! neq 0 (
-                echo     -> [FAIL] %%f
+                echo     -^> [ERROR] Syntax fail: %%~nxf
                 set "VALIDATION_FAILED=1"
             ) else (
-                echo     -> [PASS] %%~nxf
+                echo     -^> [OK] %%~nxf
             )
         )
     )

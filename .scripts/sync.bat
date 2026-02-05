@@ -23,19 +23,17 @@ if not exist "%LUA_VALIDATOR%" (
     pause & exit /b
 )
 
-:: --- 3. VALIDATION (STRICT & CLEAN) ---
-echo [SYNC] Validating mod files...
+:: --- 3. VALIDATION (STRICT MOD-ONLY) ---
+echo [SYNC] Validating active mod files...
 set "VALIDATION_FAILED=0"
+set "MOD_FOLDERS=BrrrThoseNumbers BrrrDebugBridge"
 
-for /r "%REPO_ROOT%" %%f in (*.lua) do (
-    set "FILE_PATH=%%f"
-    :: Check if path contains 'backups'
-    echo !FILE_PATH! | findstr /i "backups" >nul
-    if errorlevel 1 (
-        if exist "%%f" (
+for %%d in (%MOD_FOLDERS%) do (
+    if exist "%REPO_ROOT%\%%d" (
+        for /r "%REPO_ROOT%\%%d" %%f in (*.lua) do (
             "%LUA_VALIDATOR%" -p "%%f" >nul 2>&1
-            if !errorlevel! neq 0 (
-                echo     -^> [ERROR] Syntax fail: %%~nxf
+            if errorlevel 1 (
+                echo     -^> [FAIL] %%~nxf
                 set "VALIDATION_FAILED=1"
             ) else (
                 echo     -^> [OK] %%~nxf
@@ -44,12 +42,7 @@ for /r "%REPO_ROOT%" %%f in (*.lua) do (
     )
 )
 
-if %VALIDATION_FAILED% equ 1 (
-    echo [CRITICAL] Syntax errors detected. Sync aborted.
-    pause & exit /b
-)
-
-if %VALIDATION_FAILED% equ 1 (
+if "%VALIDATION_FAILED%"=="1" (
     echo [CRITICAL] Syntax errors detected. Sync aborted.
     pause & exit /b
 )
@@ -60,18 +53,16 @@ set "MSG_ARG=%~1"
 shift
 set "BRIDGE_FLAGS=%*"
 
-:: Execute config generator with remaining arguments
 call "%SCRIPT_DIR%set_config.bat" %BRIDGE_FLAGS%
-if !errorlevel! neq 0 (
+if errorlevel 1 (
     echo [CRITICAL] Config generation failed.
     pause & exit /b
 )
 
 :: --- 5. DEPLOYMENT ---
 echo [SYNC] Mirroring to AppData...
-:: Atomic Sync via robocopy
-robocopy "%REPO_ROOT%\BrrrThoseNumbers" "%MOD_DIR%\BrrrThoseNumbers" /MIR /NFL /NDL /NJH /NJS /nc /ns /np
-robocopy "%REPO_ROOT%\BrrrDebugBridge" "%MOD_DIR%\BrrrDebugBridge" /MIR /NFL /NDL /NJH /NJS /nc /ns /np
+robocopy "%REPO_ROOT%\BrrrThoseNumbers" "%MOD_DIR%\BrrrThoseNumbers" /MIR /NFL /NDL /NJH /NJS /nc /ns /np >nul
+robocopy "%REPO_ROOT%\BrrrDebugBridge" "%MOD_DIR%\BrrrDebugBridge" /MIR /NFL /NDL /NJH /NJS /nc /ns /np >nul
 
 :: --- 6. VERIFICATION GATE ---
 if exist "%GAME_EXE%" (
@@ -80,25 +71,23 @@ if exist "%GAME_EXE%" (
 )
 
 echo.
-echo ===========================================================
-echo   VERIFICATION: [Y] AUTO-COMMIT ^| [N] ABORT
-echo ===========================================================
+echo CONFIRM: [Y] AUTO-COMMIT ^| [N] ABORT
 echo.
 
-choice /c YN /n /m "Selection (Y/N): "
-if errorlevel 2 (
+set /p "CHOICE=Action (Y/N): "
+if /i "%CHOICE%" neq "Y" (
     echo [ABORTED] History clean.
     pause & exit /b
 )
 
 :: --- 7. ATOMIC FINALIZATION ---
 echo [SYNC] Updating snapshot and committing...
-tree "%REPO_ROOT%" /f /a > "%REPO_ROOT%\.docs\structure_snapshot.md"
+tree "%REPO_ROOT%" /f /a /at > "%REPO_ROOT%\.docs\structure_snapshot.md"
 
 set "COMMIT_MSG=%MSG_ARG%"
-if "!COMMIT_MSG!"=="" set "COMMIT_MSG=sync: automated update %date% %time%"
+if "!COMMIT_MSG!"=="" set "COMMIT_MSG=sync: automated update"
 
 git -C "%REPO_ROOT%" add .
 git -C "%REPO_ROOT%" commit -m "!COMMIT_MSG!"
-echo [SUCCESS] Atomic Sync Complete: !COMMIT_MSG!
+echo [SUCCESS] Atomic Sync Complete.
 pause

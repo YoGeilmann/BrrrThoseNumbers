@@ -71,21 +71,28 @@ if exist "%GAME_EXE%" (
 )
 
 echo.
-echo CONFIRM: [Y] AUTO-COMMIT ^| [N] ABORT
+echo -----------------------------------------------------------
+echo   CONFIRM COMMIT: [Y] YES ^| [N] NO
+echo -----------------------------------------------------------
 echo.
 
-set /p "CHOICE=Action (Y/N): "
-if /i "%CHOICE%" neq "Y" (
-    echo [ABORTED] History clean.
+:: Choice without descriptive text in the prompt to avoid buffer leaks
+choice /c YN /n /m "Select Y to commit or N to abort: "
+
+:: errorlevel 2 = N (Abort)
+:: errorlevel 1 = Y (Proceed)
+if errorlevel 2 (
+    echo [ABORTED] Sync canceled. History remains clean.
     pause & exit /b
 )
 
 :: --- 7. ATOMIC FINALIZATION ---
 echo [SYNC] Updating snapshot and committing...
-tree "%REPO_ROOT%" /f /a /at > "%REPO_ROOT%\.docs\structure_snapshot.md"
+:: Using simple redirection to avoid stream corruption
+tree "%REPO_ROOT%" /f /a > "%REPO_ROOT%\.docs\structure_snapshot.md"
 
 set "COMMIT_MSG=%MSG_ARG%"
-if "!COMMIT_MSG!"=="" set "COMMIT_MSG=sync: automated update"
+if "!COMMIT_MSG!"=="" set "COMMIT_MSG=sync: automated update %date% %time%"
 
 git -C "%REPO_ROOT%" add .
 git -C "%REPO_ROOT%" commit -m "!COMMIT_MSG!"

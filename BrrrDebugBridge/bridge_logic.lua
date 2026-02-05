@@ -1,9 +1,10 @@
---- GP-2026-STRICT: Bridge Logic (v27.0)
---- Session-Controller & Autopilot
+-- GP-2026-STRICT: Bridge Logic (v27.5)
+-- Session-Controller & Autopilot with Final Async Guard
 
 local mod_path = "Mods/BrrrDebugBridge/"
 local config_path = mod_path .. "config.lua"
 local launched = false
+local frame_delay = 0
 local config = { show_intro = false, mode = "auto", deck = "b_red", stake = 1 }
 
 if G_BRRR_BRIDGE_FIRST_LOAD == nil then
@@ -37,51 +38,50 @@ if config.mode == "auto" then
         if old_update then old_update(self, dt) end
 
         -- Guard: Prevent UI crashes
-        if G.SETTINGS and G.SETTINGS.GAMESPEED == nil then
-            G.SETTINGS.GAMESPEED = 1
+        if G.SETTINGS and G.SETTINGS.GAMESPEED == nil then 
+            G.SETTINGS.GAMESPEED = 1 
         end
 
         if G_BRRR_BRIDGE_FIRST_LOAD and not launched then
             if G.STATE == G.STATES.MENU and G.P_CENTERS and G.P_CENTERS.j_joker then
                 
-                -- Detect if an injected save is active to prevent overwrite
-                if G.SAVED_GAME and G.F_SAVE_CONTINUE then
-                    print("[BRRR:SKIP] Active save detected. Aborting Auto-Start.")
-                    launched = true
-                    G_BRRR_BRIDGE_FIRST_LOAD = false
-                else
-                    -- No save found, proceed with auto-start
-                    launched = true
-                    G_BRRR_BRIDGE_FIRST_LOAD = false
-
-                    print("[BRRR:ATOMIC] Launch Sequence Initiated")
-
-                    -- 1. Capture & Warp
-                    local user_speed = (G.SETTINGS and G.SETTINGS.GAMESPEED) or 1
-                    G.SETTINGS.GAMESPEED = 100
-                    if G.SPEEDFACTOR then G.SPEEDFACTOR = 100 end
-
-                    -- 2. Cleanup
-                    if G.MAIN_MENU_UI then G.MAIN_MENU_UI:remove(); G.MAIN_MENU_UI = nil end
-
-                    -- 3. Execute
-                    G.FUNCS.start_run(nil, {
-                        deck = config.deck or 'b_red',
-                        stake = config.stake or 1,
-                        seed = config.seed,
-                        challenge = config.challenge
-                    })
-
-                    -- 4. Stabilize
-                    G.STATE_COMPLETE = true
-
-                    -- 5. Restore & Persist
-                    G.SETTINGS.GAMESPEED = user_speed
-                    if G.SPEEDFACTOR then G.SPEEDFACTOR = user_speed end
-                    if G.save_settings then G:save_settings() end
-
-                    print("[BRRR:ATOMIC] Sequence Complete. Speed: " .. tostring(user_speed))
+                -- 1. ASYNC DELAY GUARD (60 frames / ~1s)
+                if frame_delay < 60 then
+                    frame_delay = frame_delay + 1
+                    return
                 end
+
+                -- 2. RELIABLE SAVE DETECTION
+                if (G.SAVED_GAME and G.F_SAVE_CONTINUE) or G.CONT_RUN then
+                    print("[BRRR:SKIP] Injected save detected after delay. Aborting Autopilot.")
+                    launched = true
+                    G_BRRR_BRIDGE_FIRST_LOAD = false
+                    return
+                end
+
+                -- 3. EXECUTE AUTO-START (Clean sequence)
+                launched = true
+                G_BRRR_BRIDGE_FIRST_LOAD = false
+                print("[BRRR:ATOMIC] No save found. Launching Sequence...")
+
+                local user_speed = (G.SETTINGS and G.SETTINGS.GAMESPEED) or 1
+                G.SETTINGS.GAMESPEED = 100
+                if G.SPEEDFACTOR then G.SPEEDFACTOR = 100 end
+                if G.MAIN_MENU_UI then G.MAIN_MENU_UI:remove(); G.MAIN_MENU_UI = nil end
+
+                G.FUNCS.start_run(nil, {
+                    deck = config.deck or 'b_red',
+                    stake = config.stake or 1,
+                    seed = config.seed,
+                    challenge = config.challenge
+                })
+
+                G.STATE_COMPLETE = true
+                G.SETTINGS.GAMESPEED = user_speed
+                if G.SPEEDFACTOR then G.SPEEDFACTOR = user_speed end
+                if G.save_settings then G:save_settings() end
+                
+                print("[BRRR:ATOMIC] Sequence Complete. Speed restored.")
             end
         end
     end
